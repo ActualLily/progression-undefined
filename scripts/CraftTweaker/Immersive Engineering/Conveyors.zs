@@ -1,4 +1,5 @@
-/* Adjust recipes for Immersive Engineering Conveyor Belts */
+/* Adjust recipes for Immersive Engineering */
+/* LOGISTICS */
 
 // Basic Conveyor Belt
 craftingTable.removeRecipe(<item:immersiveengineering:conveyor_basic>);
@@ -46,4 +47,12 @@ craftingTable.addShaped("conveyor_vertical", <item:immersiveengineering:conveyor
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:immersiveengineering:conveyor_basic>, <item:minecraft:ladder>], 
 	[<tag:forge:plates/wooden>, <item:minecraft:air>, <tag:forge:plates/wooden>]
+]);
+
+// Item Router
+craftingTable.removeRecipe(<item:immersiveengineering:sorter>);
+craftingTable.addShaped("sorter", <item:immersiveengineering:sorter>, [
+	[<item:contenttweaker:framed_plate>, <item:immersiveengineering:conveyor_basic>, <item:contenttweaker:framed_plate>], 
+	[<item:immersiveengineering:conveyor_basic>, <item:immersiveengineering:conveyor_splitter>, <item:immersiveengineering:conveyor_basic>], 
+	[<item:contenttweaker:framed_plate>, <item:immersiveengineering:conveyor_basic>, <item:contenttweaker:framed_plate>]
 ]);

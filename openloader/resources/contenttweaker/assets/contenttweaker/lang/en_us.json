@@ -4,6 +4,7 @@
 	"item.contenttweaker.stone_brick_single": "Stone Brick",
 	"item.contenttweaker.framed_plate": "Framed Wooden Plate",
 	"item.contenttweaker.wooden_plate": "Wooden Plate",
-	"item.contenttweaker.stone_gear": "Stone Gear"
-	
+	"item.contenttweaker.stone_gear": "Stone Gear",
+	"item.contenttweaker.stone_mechanical_component": "Stone Mechanical Component",
+	"item.contenttweaker.andesite_alloy_blend": "Stone Alloy Blend"
 }
