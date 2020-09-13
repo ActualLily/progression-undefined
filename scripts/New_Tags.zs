@@ -1,6 +1,6 @@
 /* Create new tags and modify existing tags*/
 
-	#priority 1000
+	#priority 500
 
 /* === NEW TAGS === */
 // Storage Tags
