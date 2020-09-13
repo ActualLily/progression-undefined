@@ -40,14 +40,6 @@ craftingTable.addShaped("storagenetwork/link_cable", <item:storagenetwork:storag
 	[<item:minecraft:air>, <item:storagenetwork:kabel>, <item:minecraft:air>]
 ]);
 
-// Filtered Link Cable
-craftingTable.removeRecipe(<item:storagenetwork:filter_kabel>);
-craftingTable.addShaped("storagenetwork/filter_cable", <item:storagenetwork:filter_kabel>, [
-	[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>],
-	[<item:minecraft:paper>, <item:storagenetwork:storage_kabel>, <item:minecraft:paper>],
-	[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>]
-]);
-
 // Import Cable
 craftingTable.removeRecipe(<item:storagenetwork:import_kabel>);
 craftingTable.addShaped("storagenetwork/import_cable_hopper", <item:storagenetwork:import_kabel> * 2, [
@@ -60,14 +52,6 @@ craftingTable.addShaped("storagenetwork/import_cable", <item:storagenetwork:impo
 	[<item:minecraft:air>, <item:storagenetwork:kabel>, <item:minecraft:air>],
 	[<item:storagenetwork:kabel>, <item:immersiveengineering:conveyor_dropper>, <item:storagenetwork:kabel>],
 	[<item:minecraft:air>, <item:storagenetwork:kabel>, <item:minecraft:air>]
-]);
-
-// Filtered Import Cable
-craftingTable.removeRecipe(<item:storagenetwork:import_filter_kabel>);
-craftingTable.addShaped("storagenetwork/import_filter_cable", <item:storagenetwork:import_filter_kabel> * 2, [
-	[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>],
-	[<item:minecraft:paper>, <item:storagenetwork:import_kabel>, <item:minecraft:paper>],
-	[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>]
 ]);
 
 // Export Cable
@@ -83,3 +67,20 @@ craftingTable.addShaped("storagenetwork/export_cable", <item:storagenetwork:expo
 	[<item:storagenetwork:kabel>, <item:immersiveengineering:conveyor_extract>, <item:storagenetwork:kabel>],
 	[<item:minecraft:paper>, <item:storagenetwork:kabel>, <item:minecraft:paper>]
 ]);
+
+// Filtered Link Cable
+craftingTable.removeRecipe(<item:storagenetwork:filter_kabel>);
+craftingTable.addShaped("storagenetwork/filter_cable", <item:storagenetwork:filter_kabel>, [
+	[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>],
+	[<item:minecraft:paper>, <item:storagenetwork:storage_kabel>, <item:minecraft:paper>],
+	[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>]
+]);
+
+// Filtered Import Cable
+craftingTable.removeRecipe(<item:storagenetwork:import_filter_kabel>);
+craftingTable.addShaped("storagenetwork/import_filter_cable", <item:storagenetwork:import_filter_kabel> * 2, [
+	[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>],
+	[<item:minecraft:paper>, <item:storagenetwork:import_kabel>, <item:minecraft:paper>],
+	[<item:minecraft:air>, <item:minecraft:paper>, <item:minecraft:air>]
+]);
+
