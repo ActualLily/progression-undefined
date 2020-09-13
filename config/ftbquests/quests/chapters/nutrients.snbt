@@ -1,0 +1,26 @@
+{
+	id: 182,
+	filename: "nutrients",
+	order_index: 2,
+	title: "Nutrients",
+	quests: [{
+		disable_toast: 1,
+		x: 0.0d,
+		y: 0.0d,
+		shape: "gear",
+		dependencies: [I;152],
+		size: 2.0d,
+		id: 183,
+		tasks: [{
+			id: 184,
+			type: "item",
+			item: {
+				id: "ceramics:clay_bucket",
+				Count: 1,
+				tag: {
+					fluid: "minecraft:water"
+				}
+			}
+		}]
+	}]
+}

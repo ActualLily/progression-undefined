@@ -1,0 +1,37 @@
+{
+	id: 115,
+	title: "Sapling Types",
+	loot_size: 1,
+	rewards: [
+		{
+			item: {
+				id: "minecraft:oak_sapling",
+				Count: 8
+			}
+		},
+		{
+			item: {
+				id: "minecraft:spruce_sapling",
+				Count: 8
+			}
+		},
+		{
+			item: {
+				id: "minecraft:birch_sapling",
+				Count: 8
+			}
+		},
+		{
+			item: {
+				id: "minecraft:jungle_sapling",
+				Count: 8
+			}
+		},
+		{
+			item: {
+				id: "minecraft:acacia_sapling",
+				Count: 8
+			}
+		}
+	]
+}

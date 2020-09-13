@@ -1,0 +1,583 @@
+{
+	id: 91,
+	filename: "",
+	order_index: 1,
+	title: "Welcome",
+	icon: "contenttweaker:stone_brick_single",
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			shape: "heart",
+			id: 92,
+			tasks: [{
+				id: 93,
+				type: "checkmark",
+				title: "I'm ready!",
+				disable_toast: 1
+			}],
+			rewards: [
+				{
+					id: 94,
+					type: "item",
+					item: {
+						id: "minecraft:wooden_pickaxe",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 95,
+					type: "item",
+					item: {
+						id: "minecraft:wooden_shovel",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 96,
+					type: "item",
+					item: {
+						id: "minecraft:wooden_axe",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -4.0d,
+			dependencies: [I;106],
+			id: 97,
+			tasks: [{
+				id: 98,
+				type: "item",
+				item: {
+					id: "mekanismtools:wood_paxel",
+					Count: 1,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 99,
+					type: "item",
+					item: {
+						id: "tp:wooden_helmet",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 100,
+					type: "item",
+					item: {
+						id: "tp:wooden_chestplate",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 101,
+					type: "item",
+					item: {
+						id: "tp:wooden_leggings",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 102,
+					type: "item",
+					item: {
+						id: "tp:wooden_boots",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -2.0d,
+			y: 2.0d,
+			dependencies: [I;92],
+			id: 103,
+			tasks: [{
+				id: 104,
+				type: "item",
+				item: {
+					id: "cyclic:sleeping_mat",
+					Count: 1,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [{
+				id: 105,
+				type: "item",
+				item: "minecraft:sheep_spawn_egg"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -2.0d,
+			dependencies: [I;92],
+			id: 106,
+			tasks: [{
+				id: 107,
+				type: "item",
+				item: "extendedcrafting:handheld_table"
+			}],
+			rewards: [{
+				id: 119,
+				type: "item",
+				item: {
+					id: "forbidden_arcanus:mysterywood_sapling",
+					Count: 4
+				}
+			}]
+		},
+		{
+			title: "Clay",
+			x: 0.0d,
+			y: 2.0d,
+			shape: "rsquare",
+			description: ["98 clay balls is the minimum of clay you will need to progress the main quest. That's only 20 blocks of clay!"],
+			dependencies: [I;92],
+			id: 120,
+			tasks: [{
+				id: 121,
+				type: "item",
+				item: "minecraft:clay_ball",
+				count: 91
+			}],
+			rewards: [{
+				id: 122,
+				type: "item",
+				item: {
+					id: "minecraft:flower_pot",
+					Count: 4
+				}
+			}]
+		},
+		{
+			icon: "ceramics:kiln",
+			x: 0.0d,
+			y: 4.0d,
+			shape: "rsquare",
+			dependencies: [I;120],
+			id: 123,
+			tasks: [
+				{
+					id: 124,
+					type: "item",
+					item: "ceramics:kiln"
+				},
+				{
+					id: 125,
+					type: "item",
+					item: "ceramics:unfired_clay_bucket"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 6.0d,
+			shape: "rsquare",
+			dependencies: [I;123],
+			id: 126,
+			tasks: [{
+				id: 127,
+				type: "item",
+				item: "ceramics:clay_plate",
+				count: 16
+			}]
+		},
+		{
+			title: "Clay Armor",
+			icon: {
+				id: "ceramics:clay_chestplate",
+				Count: 1,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -2.0d,
+			y: 6.0d,
+			dependencies: [I;126],
+			id: 128,
+			tasks: [
+				{
+					id: 129,
+					type: "item",
+					item: {
+						id: "ceramics:clay_helmet",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 130,
+					type: "item",
+					item: {
+						id: "ceramics:clay_chestplate",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 131,
+					type: "item",
+					item: {
+						id: "ceramics:clay_leggings",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 132,
+					type: "item",
+					item: {
+						id: "ceramics:clay_boots",
+						Count: 1,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			],
+			rewards: [{
+				id: 133,
+				type: "item",
+				item: {
+					id: "extlights:light_candleplate_clay",
+					Count: 4
+				}
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 6.0d,
+			dependencies: [I;126],
+			id: 134,
+			tasks: [{
+				id: 135,
+				type: "item",
+				item: "bonsaitrees2:bonsaipot"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 4.0d,
+			shape: "gear",
+			dependencies: [I;123],
+			size: 2.0d,
+			id: 152,
+			tasks: [{
+				id: 153,
+				type: "item",
+				item: {
+					id: "ceramics:clay_bucket",
+					Count: 1,
+					tag: {
+						fluid: "minecraft:water"
+					}
+				}
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -4.0d,
+			shape: "rsquare",
+			dependencies: [I;
+				164,
+				127
+			],
+			id: 158,
+			tasks: [{
+				id: 159,
+				type: "item",
+				item: "immersiveengineering:cokebrick",
+				count: 27
+			}]
+		},
+		{
+			x: 8.0d,
+			y: -4.0d,
+			shape: "rsquare",
+			dependencies: [I;168],
+			dependency_requirement: "one_completed",
+			id: 160,
+			tasks: [{
+				id: 161,
+				type: "item",
+				item: {
+					id: "ceramics:clay_bucket",
+					Count: 1,
+					tag: {
+						fluid: "immersiveengineering:creosote"
+					}
+				}
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 0.0d,
+			shape: "rsquare",
+			dependencies: [I;92],
+			id: 162,
+			tasks: [{
+				id: 163,
+				type: "item",
+				item: {
+					id: "immersiveengineering:hammer",
+					Count: 1,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -2.0d,
+			shape: "rsquare",
+			dependencies: [I;250],
+			id: 164,
+			tasks: [{
+				id: 165,
+				type: "item",
+				item: "contenttweaker:stone_brick_single",
+				count: 12
+			}]
+		},
+		{
+			x: 10.0d,
+			y: -4.0d,
+			shape: "gear",
+			dependencies: [I;160],
+			size: 2.0d,
+			id: 166,
+			tasks: [{
+				id: 167,
+				type: "item",
+				item: "immersiveengineering:treated_wood_horizontal",
+				count: 8
+			}],
+			rewards: [{
+				id: 175,
+				type: "item",
+				item: {
+					ForgeCaps: {
+						Parent: {
+							Size: 2,
+							Items: []
+						}
+					},
+					id: "immersiveengineering:skyhook",
+					Count: 1
+				}
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -4.0d,
+			dependencies: [I;158],
+			id: 168,
+			tasks: [{
+				id: 169,
+				type: "item",
+				item: "minecraft:charcoal",
+				count: 4
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 0.0d,
+			dependencies: [I;92],
+			id: 185,
+			tasks: [{
+				id: 186,
+				type: "item",
+				item: {
+					id: "minecraft:shield",
+					Count: 1,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 0.0d,
+			dependencies: [I;
+				164,
+				276
+			],
+			id: 247,
+			tasks: [{
+				id: 249,
+				type: "item",
+				item: "charm:crate_open_oak"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -2.0d,
+			dependencies: [I;162],
+			id: 250,
+			tasks: [{
+				id: 251,
+				type: "item",
+				item: "contenttweaker:stone_dust",
+				count: 12
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 2.0d,
+			dependencies: [I;
+				164,
+				254
+			],
+			id: 252,
+			tasks: [{
+				id: 253,
+				type: "item",
+				item: "contenttweaker:stone_gear"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 2.0d,
+			dependencies: [I;92],
+			id: 254,
+			tasks: [{
+				id: 255,
+				type: "item",
+				item: "contenttweaker:wooden_gear"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 2.0d,
+			dependencies: [I;276],
+			id: 268,
+			tasks: [{
+				id: 269,
+				type: "item",
+				item: "immersiveengineering:sorter"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 0.0d,
+			dependencies: [I;162],
+			id: 274,
+			tasks: [{
+				id: 275,
+				type: "item",
+				item: "contenttweaker:wooden_plate"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 2.0d,
+			dependencies: [I;274],
+			id: 276,
+			tasks: [{
+				id: 277,
+				type: "item",
+				item: "contenttweaker:framed_plate"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 4.0d,
+			dependencies: [I;
+				126,
+				254
+			],
+			id: 280,
+			tasks: [{
+				id: 281,
+				type: "item",
+				item: "immersiveengineering:conveyor_basic"
+			}]
+		},
+		{
+			title: "Enhanced Conveyors",
+			icon: "immersiveengineering:conveyor_extract",
+			x: 4.0d,
+			y: 4.0d,
+			dependencies: [I;
+				276,
+				252,
+				280
+			],
+			id: 282,
+			tasks: [
+				{
+					id: 284,
+					type: "item",
+					item: "immersiveengineering:conveyor_dropper"
+				},
+				{
+					id: 285,
+					type: "item",
+					item: "immersiveengineering:conveyor_vertical"
+				},
+				{
+					id: 286,
+					type: "item",
+					item: "immersiveengineering:conveyor_splitter"
+				},
+				{
+					id: 287,
+					type: "item",
+					item: "immersiveengineering:conveyor_extract"
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 6.0d,
+			dependencies: [I;
+				284,
+				134
+			],
+			id: 288,
+			tasks: [{
+				id: 289,
+				type: "item",
+				item: "bonsaitrees2:hopping_bonsaipot"
+			}]
+		}
+	]
+}

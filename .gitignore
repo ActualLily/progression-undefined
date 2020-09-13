@@ -1,0 +1,15 @@
+﻿backups
+.mixin.out
+usernamecache.json
+.curseclient
+BotaniaVars.dat
+minecraftinstance.json
+options.txt
+patchouli_data.json
+reauth.toml
+usercache.json
+saves
+logs
+crash-reports
+journeymap
+local

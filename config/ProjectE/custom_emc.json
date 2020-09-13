@@ -1,0 +1,76 @@
+{
+  "entries": [
+    {
+      "item": "astralsorcery:marble_raw",
+      "emc": 8
+    },
+    {
+      "item": "#minecraft:logs",
+      "emc": 32
+    },
+    {
+      "item": "#forge:sapling",
+      "emc": 32
+    },
+    {
+      "item": "#forge:stone",
+      "emc": 8
+    },
+    {
+      "item": "#forge:cobblestone",
+      "emc": 8
+    },
+    {
+      "item": "#minecraft:small_flowers",
+      "emc": 32
+    },
+    {
+      "item": "minecraft:dirt",
+      "emc": 8
+    },
+    {
+      "item": "#forge:sand",
+      "emc": 8
+    },
+    {
+      "item": "minecraft:clay_ball",
+      "emc": 8
+    },
+    {
+      "item": "minecraft:iron_ingot",
+      "emc": 1024
+    },
+    {
+      "item": "minecraft:gold_ingot",
+      "emc": 1024
+    },
+    {
+      "item": "minecraft:water_bucket",
+      "emc": 3072
+    },
+    {
+      "item": "minecraft:gravel",
+      "emc": 32
+    },
+    {
+      "item": "minecraft:flint",
+      "emc": 32
+    },
+    {
+      "item": "geolosys:lead_ingot",
+      "emc": 1024
+    },
+    {
+      "item": "minecraft:sugar_cane",
+      "emc": 32
+    },
+    {
+      "item": "minecraft:glowstone_dust",
+      "emc": 512
+    },
+    {
+      "item": "contenttweaker:stone_dust",
+      "emc": 32
+    }
+  ]
+}

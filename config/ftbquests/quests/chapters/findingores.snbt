@@ -1,0 +1,7 @@
+{
+	id: 172,
+	filename: "findingores",
+	order_index: 3,
+	title: "Finding Ores",
+	quests: []
+}

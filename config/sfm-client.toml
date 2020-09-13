@@ -1,0 +1,28 @@
+
+#General client config options
+[general]
+	#Controls whether the to hint the player to reload component groups on login or not
+	showComponentGroupsMessage = true
+
+#General GUI config options
+[generalGUI]
+	#How long one move wheel movement for scrolling lists
+	#Range: 1 ~ 256
+	scrollSpeed = 20
+	#Set to true to enable debug highlighting for GUIs
+	enableInspections = false
+
+#Factory manager GUI config options
+[factoryManagerGUI]
+	#Enable to fix the factory manager size at 256*140, 
+	#otherwise it will be 2/3 of the window width, and 3/4 of the window height
+	useFixedSizeScreen = false
+	#Enable to use vanilla background instead of a plain rectangle
+	useBackgroundOnFullscreen = false
+	#Determines how fast arrow keys moving is (for editor panel)
+	#Range: > 0
+	defaultEditorMoveSpeed = 2
+	#Determines how fast arrow keys moving is, while Shift is pressed
+	#Range: > 0
+	acceleratedEditorMoveSpeed = 20
+

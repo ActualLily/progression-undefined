@@ -1,0 +1,15 @@
+#The colors for blocks used when rendering their result bounding box
+#by block name. Each entry must be a key-value pair separated by a `=`,
+#with the key being the tag name and the value being the hexadecimal
+#RGB value of the color.
+blockColors = ["geolosys:coal_ore=0x111111", "geolosys:teallite_ore=0x938273", "geolosys:beryl_ore=0x00b174", "geolosys:bauxite_ore=0xb1a17d", "geolosys:cinnabar_ore=0x6e1809", "geolosys:gold_ore=0xdfbe3e", "geolosys:lapis_ore=0x004985", "geolosys:platinum_ore=0x9ea5b7", "geolosys:limonite_ore=0xdabb83", "geolosys:sphalerite_ore=0x493d5e", "geolosys:autunite_ore=0xadca00", "geolosys:quartz_ore=0xd6deea", "geolosys:galena_ore=0x8a8c9d", "geolosys:malachite_ore=0x357659", "geolosys:azurite_ore=0x253e6f", "geolosys:hematite_ore=0x692e1c", "geolosys:kimberlite_ore=0xe4e4e4", "tp:ender_ore=0x11805d"]
+#The colors for blocks used when rendering their result bounding box
+#by block tag. See `blockColors` for format entries have to be in.
+blockTagColors = []
+#The colors for fluids used when rendering their result bounding box
+#by fluid name. See `blockColors` for format entries have to be in.
+fluidColors = []
+#The colors for fluids used when rendering their result bounding box
+#by fluid tag. See `blockColors` for format entries have to be in.
+fluidTagColors = ["minecraft:water=0x4040ff", "minecraft:lava=0x9f5224"]
+
