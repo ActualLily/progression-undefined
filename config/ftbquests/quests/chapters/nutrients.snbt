@@ -1,7 +1,7 @@
 {
 	id: 182,
 	filename: "nutrients",
-	order_index: 3,
+	order_index: 2,
 	title: "Nutrients",
 	quests: [{
 		disable_toast: 1,

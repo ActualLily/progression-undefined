@@ -1,6 +1,6 @@
 {
 	version: 7,
-	last_id: 363,
+	last_id: 388,
 	icon: "hearthstonemod:hearthstone",
 	default_reward_team: 0,
 	default_consume_items: 0,

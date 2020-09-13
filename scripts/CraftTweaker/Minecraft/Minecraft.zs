@@ -21,9 +21,3 @@ craftingTable.addShaped("minecraft/piston", <item:minecraft:piston>, [
 	[<tag:forge:cobblestone>, <item:contenttweaker:stone_mechanical_component>, <tag:forge:cobblestone>],
 	[<tag:forge:cobblestone>, <item:minecraft:redstone>, <tag:forge:cobblestone>]
 ]);
-
-craftingTable.addShaped("minecraft/piston_alt", <item:minecraft:piston>, [
-	[<tag:minecraft:planks>, <tag:minecraft:planks>, <tag:minecraft:planks>],
-	[<item:quark:sturdy_stone>, <item:contenttweaker:stone_gear>, <item:quark:sturdy_stone>],
-	[<item:quark:sturdy_stone>, <item:minecraft:redstone>, <item:quark:sturdy_stone>]
-]);

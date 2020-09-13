@@ -12,7 +12,7 @@ craftingTable.addShapeless("cyclic/sleeping_mat", <item:cyclic:sleeping_mat>, [
 // Adjust Fisher recipe
 craftingTable.removeRecipe(<item:cyclic:fisher>);
 craftingTable.addShaped("cyclic/fisher", <item:cyclic:fisher>, [
-	[<tag:forge:plates/framed>, <item:waterstrainer:string_mesh>, <tag:forge:plates/framed>],
-	[<item:waterstrainer:string_mesh>, <item:minecraft:chest>, <item:waterstrainer:string_mesh>],
-	[<tag:forge:plates/framed>, <item:waterstrainer:string_mesh>, <tag:forge:plates/framed>]
+	[<tag:forge:plates/framed>, <item:waterstrainer:strainer_fisherman>, <tag:forge:plates/framed>],
+	[<item:waterstrainer:strainer_fisherman>, <item:minecraft:chest>, <item:waterstrainer:strainer_fisherman>],
+	[<tag:forge:plates/framed>, <item:waterstrainer:strainer_fisherman>, <tag:forge:plates/framed>]
 ]);
