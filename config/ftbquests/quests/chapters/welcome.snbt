@@ -1,7 +1,7 @@
 {
 	id: 91,
-	filename: "",
-	order_index: 0,
+	filename: "welcome",
+	order_index: 1,
 	title: "Welcome",
 	icon: "contenttweaker:stone_brick_single",
 	quests: [
@@ -441,7 +441,6 @@
 				164,
 				276
 			],
-			hide: 0,
 			size: 2.0d,
 			id: 247,
 			tasks: [{
