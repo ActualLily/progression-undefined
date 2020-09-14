@@ -3,7 +3,7 @@
 
 	[gen.arcane_crystal]
 		#Generate Arcane Crystal Ore? [default: true]
-		generate = false
+		generate = true
 		#Maximum size of Arcane Crystal Ore veins [default: 6]
 		#Range: 0 ~ 100
 		max_vein_size = 5
@@ -16,7 +16,7 @@
 
 	[gen.runestone]
 		#Generate Runestone? [default: true]
-		generate = false
+		generate = true
 		#Maximum size of Runestone veins [default: 3]
 		#Range: 0 ~ 100
 		max_vein_size = 3
@@ -29,7 +29,7 @@
 
 	[gen.dark_runestone]
 		#Generate Dark Runestone? [default: true]
-		generate = false
+		generate = true
 		#Maximum size of Dark Runestone veins [default: 4]
 		#Range: 0 ~ 100
 		max_vein_size = 4
@@ -42,7 +42,7 @@
 
 	[gen.dark_stone]
 		#Generate Dark Stone? [default: true]
-		generate = false
+		generate = true
 		#Maximum size of Dark Stone veins [default: 20]
 		#Range: 0 ~ 100
 		max_vein_size = 20
@@ -55,11 +55,11 @@
 
 	[gen.xpetrified_ore]
 		#Generate Xpetrified Ore? [default: true]
-		generate = false
+		generate = true
 
 	[gen.stella_arcanum]
 		#Generate Should Stella Arcanum? [default: true]
-		generate = false
+		generate = true
 		#Maximum size of Stella Arcanum veins [default: 3]
 		#Range: 0 ~ 100
 		max_vein_size = 3
