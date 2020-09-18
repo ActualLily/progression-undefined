@@ -5,7 +5,7 @@
 	#Range: > 0
 	propickHUDY = 2
 	#Enable Minecraft object tag tooltip with Advanced Tooltips on (F3+"H")
-	enableTagDebug = true
+	enableTagDebug = false
 	#The X-position of the Prospector's Pickaxe Depth HUD
 	#Range: > 0
 	propickHUDX = 2
