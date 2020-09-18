@@ -32,7 +32,7 @@
 	#Allows flux tiles to work as chunk loaders
 	enableChunkLoading = true
 	#Enables redstones being compressed with the bedrock and obsidian to get flux
-	enableFluxRecipe = true
+	enableFluxRecipe = false
 
 [blacklist]
 	#a blacklist for blocks which flux connections shouldn't connect to, use format 'modid:name@blockstate'
