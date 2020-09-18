@@ -1,7 +1,543 @@
 {
 	id: 172,
 	filename: "findingores",
-	order_index: 3,
+	order_index: 2,
 	title: "Finding Ores",
-	quests: []
+	icon: "geolosys:prospectors_pick",
+	quests: [
+		{
+			disable_toast: 1,
+			x: 0.0d,
+			y: 0.0d,
+			shape: "gear",
+			size: 2.0d,
+			id: 393,
+			tasks: [{
+				id: 394,
+				type: "item",
+				item: "geolosys:field_manual"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -1.0d,
+			dependencies: [I;393],
+			id: 395,
+			tasks: [{
+				id: 396,
+				type: "item",
+				item: "minecraft:redstone"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 0.0d,
+			shape: "rsquare",
+			dependencies: [I;
+				399,
+				401,
+				471
+			],
+			size: 1.5d,
+			id: 397,
+			tasks: [{
+				id: 398,
+				type: "item",
+				item: "geolosys:prospectors_pick"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 0.0d,
+			dependencies: [I;395],
+			id: 399,
+			tasks: [{
+				id: 400,
+				type: "item",
+				item: {
+					id: "naturescompass:naturescompass",
+					Count: 1,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -2.0d,
+			dependencies: [I;395],
+			id: 401,
+			tasks: [{
+				id: 402,
+				type: "item",
+				item: "scannable:scanner"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: -2.0d,
+			dependencies: [I;397],
+			id: 405,
+			tasks: [{
+				id: 406,
+				type: "item",
+				item: "geolosys:copper_cluster"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -2.0d,
+			dependencies: [I;397],
+			id: 407,
+			tasks: [{
+				id: 408,
+				type: "item",
+				item: "minecraft:coal"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 2.0d,
+			dependencies: [I;397],
+			id: 409,
+			tasks: [{
+				id: 410,
+				type: "item",
+				item: "geolosys:tin_cluster"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 2.0d,
+			dependencies: [I;397],
+			id: 411,
+			tasks: [{
+				id: 412,
+				type: "item",
+				item: "geolosys:aluminum_cluster"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 0.0d,
+			dependencies: [I;397],
+			id: 413,
+			tasks: [{
+				id: 414,
+				type: "item",
+				item: "geolosys:iron_cluster"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -4.0d,
+			dependencies: [I;407],
+			id: 415,
+			tasks: [{
+				id: 416,
+				type: "item",
+				item: "immersiveengineering:coal_coke",
+				count: 16
+			}]
+		},
+		{
+			x: 8.0d,
+			y: -4.0d,
+			dependencies: [I;405],
+			id: 417,
+			tasks: [{
+				id: 418,
+				type: "item",
+				item: "create:copper_ingot",
+				count: 16
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 0.0d,
+			dependencies: [I;413],
+			id: 419,
+			tasks: [{
+				id: 420,
+				type: "item",
+				item: "minecraft:iron_ingot",
+				count: 16
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 4.0d,
+			dependencies: [I;409],
+			id: 421,
+			tasks: [{
+				id: 422,
+				type: "item",
+				item: "geolosys:tin_ingot",
+				count: 16
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 4.0d,
+			dependencies: [I;411],
+			id: 423,
+			tasks: [{
+				id: 424,
+				type: "item",
+				item: "geolosys:aluminum_ingot",
+				count: 16
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 0.0d,
+			shape: "rsquare",
+			dependencies: [I;419],
+			size: 1.5d,
+			id: 429,
+			tasks: [{
+				id: 430,
+				type: "item",
+				item: {
+					id: "minecraft:iron_pickaxe",
+					Count: 1,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 10.0d,
+			y: -2.0d,
+			dependencies: [I;429],
+			id: 433,
+			tasks: [{
+				id: 434,
+				type: "item",
+				item: "geolosys:gold_cluster"
+			}]
+		},
+		{
+			x: 10.0d,
+			y: -4.0d,
+			dependencies: [I;433],
+			id: 435,
+			tasks: [{
+				id: 436,
+				type: "item",
+				item: "minecraft:gold_ingot",
+				count: 16
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 2.0d,
+			dependencies: [I;429],
+			id: 437,
+			tasks: [{
+				id: 438,
+				type: "item",
+				item: "minecraft:lapis_lazuli"
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 4.0d,
+			dependencies: [I;437],
+			id: 439,
+			tasks: [{
+				id: 440,
+				type: "item",
+				item: "create:lapis_sheet",
+				count: 16
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 2.0d,
+			dependencies: [I;429],
+			id: 441,
+			tasks: [{
+				id: 442,
+				type: "item",
+				item: "geolosys:platinum_cluster"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: -2.0d,
+			dependencies: [I;429],
+			id: 443,
+			tasks: [{
+				id: 444,
+				type: "item",
+				item: "geolosys:lead_cluster"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: -2.0d,
+			dependencies: [I;429],
+			id: 445,
+			tasks: [{
+				id: 446,
+				type: "item",
+				item: "geolosys:silver_cluster"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: 0.0d,
+			dependencies: [I;429],
+			id: 447,
+			tasks: [{
+				id: 448,
+				type: "item",
+				item: "minecraft:diamond"
+			}]
+		},
+		{
+			x: 16.0d,
+			y: 0.0d,
+			dependencies: [I;447],
+			id: 449,
+			tasks: [{
+				id: 450,
+				type: "item",
+				item: "mekanism:enriched_diamond",
+				count: 16
+			}]
+		},
+		{
+			x: 18.0d,
+			y: 0.0d,
+			shape: "rsquare",
+			dependencies: [I;449],
+			size: 1.5d,
+			id: 451,
+			tasks: [{
+				id: 452,
+				type: "item",
+				item: {
+					id: "minecraft:diamond_pickaxe",
+					Count: 1,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 17.0d,
+			y: -2.0d,
+			dependencies: [I;451],
+			id: 453,
+			tasks: [{
+				id: 454,
+				type: "item",
+				item: "minecraft:quartz"
+			}]
+		},
+		{
+			x: 17.0d,
+			y: 2.0d,
+			dependencies: [I;451],
+			id: 455,
+			tasks: [{
+				id: 456,
+				type: "item",
+				item: "minecraft:emerald"
+			}]
+		},
+		{
+			x: 19.0d,
+			y: -2.0d,
+			dependencies: [I;451],
+			id: 457,
+			tasks: [{
+				id: 458,
+				type: "item",
+				item: "minecraft:obsidian"
+			}]
+		},
+		{
+			x: 19.0d,
+			y: 2.0d,
+			dependencies: [I;451],
+			id: 459,
+			tasks: [{
+				id: 460,
+				type: "item",
+				item: "geolosys:uranium_cluster"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: -4.0d,
+			dependencies: [I;445],
+			id: 461,
+			tasks: [{
+				id: 462,
+				type: "item",
+				item: "geolosys:silver_ingot",
+				count: 16
+			}]
+		},
+		{
+			x: 14.0d,
+			y: 2.0d,
+			dependencies: [I;429],
+			id: 463,
+			tasks: [{
+				id: 464,
+				type: "item",
+				item: "geolosys:osmium_cluster"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: 4.0d,
+			dependencies: [I;463],
+			id: 465,
+			tasks: [{
+				id: 466,
+				type: "item",
+				item: "mekanism:ingot_osmium",
+				count: 16
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 4.0d,
+			dependencies: [I;441],
+			id: 467,
+			tasks: [{
+				id: 468,
+				type: "item",
+				item: "geolosys:platinum_ingot",
+				count: 16
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 2.0d,
+			dependencies: [I;393],
+			dependency_requirement: "one_completed",
+			id: 469,
+			tasks: [{
+				id: 470,
+				type: "item",
+				item: {
+					id: "minecraft:stone_shovel",
+					Count: 1,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 2.0d,
+			dependencies: [I;469],
+			id: 471,
+			tasks: [{
+				id: 472,
+				type: "item",
+				item: "astralsorcery:aquamarine"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -4.0d,
+			dependencies: [I;401],
+			id: 473,
+			tasks: [{
+				id: 474,
+				type: "item",
+				item: "scannable:module_blank"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: -4.0d,
+			dependencies: [I;443],
+			id: 475,
+			tasks: [{
+				id: 476,
+				type: "item",
+				item: "geolosys:lead_ingot",
+				count: 16
+			}]
+		},
+		{
+			x: 17.0d,
+			y: -4.0d,
+			dependencies: [I;453],
+			id: 477,
+			tasks: [{
+				id: 478,
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 16
+			}]
+		},
+		{
+			x: 19.0d,
+			y: -4.0d,
+			dependencies: [I;457],
+			id: 479,
+			tasks: [{
+				id: 480,
+				type: "item",
+				item: "mekanism:ingot_refined_obsidian",
+				count: 16
+			}]
+		},
+		{
+			x: 19.0d,
+			y: 4.0d,
+			dependencies: [I;459],
+			id: 481,
+			tasks: [{
+				id: 482,
+				type: "item",
+				item: "immersiveengineering:ingot_uranium",
+				count: 16
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -4.0d,
+			dependencies: [I;473],
+			id: 483,
+			tasks: [{
+				id: 484,
+				type: "item",
+				item: "scannable:module_ore_common"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -6.0d,
+			dependencies: [I;483],
+			id: 485,
+			tasks: [{
+				id: 486,
+				type: "item",
+				item: "scannable:module_ore_rare"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -6.0d,
+			dependencies: [I;473],
+			id: 487,
+			tasks: [{
+				id: 488,
+				type: "item",
+				item: "scannable:module_range"
+			}]
+		}
+	]
 }
