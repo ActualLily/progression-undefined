@@ -1,7 +1,7 @@
 
 [energy]
 	#Whether to consume energy when performing a scan. Will make the scanner a chargeable item.
-	useEnergy = true
+	useEnergy = false
 	#Amount of energy that can be stored in a scanner.
 	#Range: > 0
 	energyCapacityScanner = 5000
@@ -41,7 +41,7 @@
 	#value by 0.25, and the block scanner multiplies it by 0.5.
 	#Range modules will boost the range by half this value.
 	#Range: 16 ~ 128
-	baseScanRadius = 64
+	baseScanRadius = 128
 
 [blocks]
 	#Registry names of blocks that should be ignored.
@@ -54,12 +54,12 @@
 
 [ores]
 	#Registry names of blocks considered 'common ores', requiring the common ore scanner module.
-	commonOreBlocks = ["minecraft:clay"]
+	commonOreBlocks = ["minecraft:clay", "tp:ender_ore"]
 	#Block tags of blocks considered 'common ores', requiring the common ore scanner module.
-	commonOreBlockTags = ["forge:ores/iron", "forge:ores/redstone", "forge:ores/quartz", "forge:ores/coal"]
-	#Registry names of blocks considered 'rare ores', requiring the common ore scanner module.
+	commonOreBlockTags = ["forge:ores/iron", "forge:ores/redstone", "forge:ores/quartz", "forge:ores/coal", "forge:ores/copper", "forge:ores/tin"]
+	#Registry names of blocks considered 'rare ores', requiring the rare ore scanner module.
 	rareOreBlocks = ["minecraft:glowstone"]
-	#Block tags of blocks considered 'rare ores', requiring the common ore scanner module.
+	#Block tags of blocks considered 'rare ores', requiring the rare ore scanner module.
 	#Any block with the forge:ores tag is implicitly in this list, unless the block also
 	#matches an ignored or common ore block tag, or is an ignored or common block.
 	rareOreBlockTags = []

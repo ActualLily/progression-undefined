@@ -6,5 +6,5 @@
 	goldDurability = 15
 	#Defines the amount of uses the Diamond TelePass has [Default: 1000]
 	#Range: > 0
-	diamondDurability = 1000
+	diamondDurability = 50
 
