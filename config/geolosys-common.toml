@@ -18,7 +18,7 @@
 	samplePlacementBlacklist = ["minecraft:ice", "minecraft:packed_ice"]
 	#The range (depth) of the prospector's pick prospecting cycle
 	#Range: > 1
-	proPickRange = 64
+	proPickRange = 80
 	#A list of blocks which the prospector's pick should also detect.
 	#Format: Comma-delimited set of <modid:block> (see default for example)
 	proPickExtras = []
@@ -47,7 +47,7 @@
 	#This will make it so that Platinum will drop Platinum AND Osmium
 	enableOsmium = true
 	#This will make it so that Platinum will ONLY drop Osmium
-	enableOsmiumExclusively = true
+	enableOsmiumExclusively = false
 	#This will make it so that Autunite will drop Uranium AND Yellorium
 	enableYellorium = true
 	#This will make is so that Coal has a rare chance of dropping sulfur

@@ -29,15 +29,15 @@
         "geolosys:cinnabar_ore_sample",
         100
       ],
-      "yMin": 5,
-      "yMax": 12,
+      "yMin": 3,
+      "yMax": 63,
       "chance": 7,
       "size": 80,
       "dimBlacklist": [
         "the_nether",
         "the_end"
       ],
-      "type": "SPARSE",
+      "type": "DIKE",
       "density": 1.0
     },
     {
@@ -49,8 +49,8 @@
         "geolosys:gold_ore_sample",
         100
       ],
-      "yMin": 5,
-      "yMax": 30,
+      "yMin": 3,
+      "yMax": 33,
       "chance": 4,
       "size": 80,
       "dimBlacklist": [
@@ -69,8 +69,8 @@
         "geolosys:lapis_ore_sample",
         100
       ],
-      "yMin": 10,
-      "yMax": 24,
+      "yMin": 3,
+      "yMax": 23,
       "chance": 5,
       "size": 64,
       "dimBlacklist": [
@@ -113,8 +113,8 @@
         "geolosys:kimberlite_ore_sample",
         100
       ],
-      "yMin": 2,
-      "yMax": 15,
+      "yMin": 3,
+      "yMax": 18,
       "chance": 4,
       "size": 40,
       "type": "DIKE",
@@ -133,8 +133,8 @@
         "geolosys:beryl_ore_sample",
         100
       ],
-      "yMin": 4,
-      "yMax": 32,
+      "yMin": 3,
+      "yMax": 33,
       "chance": 3,
       "size": 32,
       "dimBlacklist": [
@@ -157,8 +157,8 @@
         "geolosys:hematite_ore_sample",
         100
       ],
-      "yMin": 32,
-      "yMax": 60,
+      "yMin": 23,
+      "yMax": 63,
       "chance": 6,
       "size": 48,
       "type": "DIKE",
@@ -177,8 +177,8 @@
         "geolosys:limonite_ore_sample",
         100
       ],
-      "yMin": 6,
-      "yMax": 32,
+      "yMin": 3,
+      "yMax": 33,
       "chance": 4,
       "size": 160,
       "dimBlacklist": [
@@ -207,8 +207,8 @@
         "geolosys:azurite_ore_sample",
         60
       ],
-      "yMin": 12,
-      "yMax": 44,
+      "yMin": 13,
+      "yMax": 43,
       "chance": 8,
       "size": 160,
       "dimBlacklist": [
@@ -227,8 +227,8 @@
         "geolosys:cassiterite_ore_sample",
         100
       ],
-      "yMin": 44,
-      "yMax": 68,
+      "yMin": 43,
+      "yMax": 63,
       "chance": 6,
       "size": 48,
       "dimBlacklist": [
@@ -254,7 +254,7 @@
         "geolosys:teallite_ore_sample",
         100
       ],
-      "yMin": 8,
+      "yMin": 3,
       "yMax": 43,
       "chance": 2,
       "size": 160,
@@ -278,8 +278,8 @@
         "geolosys:galena_ore_sample",
         100
       ],
-      "yMin": 16,
-      "yMax": 50,
+      "yMin": 13,
+      "yMax": 53,
       "chance": 6,
       "size": 144,
       "dimBlacklist": [
@@ -302,8 +302,8 @@
         "geolosys:bauxite_ore_sample",
         100
       ],
-      "yMin": 45,
-      "yMax": 70,
+      "yMin": 43,
+      "yMax": 73,
       "chance": 4,
       "size": 128,
       "dimBlacklist": [
@@ -328,7 +328,7 @@
         100
       ],
       "yMin": 3,
-      "yMax": 25,
+      "yMax": 23,
       "chance": 4,
       "size": 64,
       "dimBlacklist": [
@@ -353,7 +353,7 @@
         "geolosys:autunite_ore_sample",
         100
       ],
-      "yMin": 8,
+      "yMin": 3,
       "yMax": 33,
       "chance": 4,
       "size": 96,
@@ -377,8 +377,8 @@
         "geolosys:sphalerite_ore_sample",
         100
       ],
-      "yMin": 37,
-      "yMax": 46,
+      "yMin": 33,
+      "yMax": 48,
       "chance": 5,
       "size": 48,
       "dimBlacklist": [
