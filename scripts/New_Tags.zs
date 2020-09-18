@@ -14,7 +14,6 @@
 <tag:forge:plates/wooden>.createItemTag();
 <tag:forge:plates/framed>.createItemTag();
 
-
 /* === EXISTING TAGS === */
 <tag:forge:nuggets>.removeItems([<item:tp:tiny_coal>]);
 <tag:forge:nuggets>.removeItems([<item:tp:tiny_charcoal>]);
