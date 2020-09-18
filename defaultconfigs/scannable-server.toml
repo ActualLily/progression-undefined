@@ -1,58 +1,68 @@
+[energy]
+	#Whether to consume energy when performing a scan. Will make the scanner a chargeable item.
+	useEnergy = false
+	#Amount of energy that can be stored in a scanner.
+	#Range: > 0
+	energyCapacityScanner = 5000
+	#Amount of energy used by the range module per scan.
+	#Range: > 0
+	energyCostModuleRange = 100
+	#Amount of energy used by the animal module per scan.
+	#Range: > 0
+	energyCostModuleAnimal = 25
+	#Amount of energy used by the monster module per scan.
+	#Range: > 0
+	energyCostModuleMonster = 50
+	#Amount of energy used by the common ore module per scan.
+	#Range: > 0
+	energyCostModuleOreCommon = 75
+	#Amount of energy used by the rare ore module per scan.
+	#Range: > 0
+	energyCostModuleOreRare = 100
+	#Amount of energy used by the block module per scan.
+	#Range: > 0
+	energyCostModuleBlock = 100
+	#Amount of energy used by the structure module per scan.
+	#Range: > 0
+	energyCostModuleStructure = 150
+	#Amount of energy used by the fluid module per scan.
+	#Range: > 0
+	energyCostModuleFluid = 50
+	#Amount of energy used by the entity module per scan.
+	#Range: > 0
+	energyCostModuleEntity = 75
 
 [general]
-	#The blocks whose hardness should be modified. This needs to be the registry name of the block followed by an @ followed by the new hardness, so for example: 'minecraft:stone@5'
-	
-	# Default MC hardness is 3 on all ores
-	# Hardness is originally calculated based on pickaxe tier speed * 0.75 (gold ore is iron tier, pickaxe is x6, so 6 * 0.75 = 4.5)
-	# Hardness gets rounded up or down on case basis
-	# Iron gets a special incentive to make an iron pickaxe ASAP to increase mining speed
-	# Obsidian gets nerfed a little bit
-	
-	tweak_hardness = [
-	'geolosys:coal_ore@2',
-	'geolosys:teallite_ore@3', 
-	'geolosys:bauxite_ore@3', 
-	'geolosys:cinnabar_ore@3', 
-	'geolosys:malachite_ore@3',
-	'geolosys:azurite_ore@3',
-	'geolosys:hematite_ore@4',
-	'tp:ender_ore@4',
-	'geolosys:gold_ore@4', 
-	'geolosys:lapis_ore@4', 
-	'geolosys:platinum_ore@4', 
-	'geolosys:platinum_ore@4',
-	'geolosys:sphalerite_ore@4',
-	'geolosys:galena_ore@4',
-	'geolosys:kimberlite_ore@6',
-	'geolosys:autunite_ore@6',
-	'geolosys:beryl_ore@6', 
-	'geolosys:quartz_ore@6',
-	'minecraft:nether_quartz_ore@6',
-	'minecraft:obsidian@18'
-	]
-	#The blocks whose mining level should be modified. This needs to be the registry name of the block followed by an @ followed by the tool class ('pickaxe', 'axe' or 'shovel') followed by an @ followed by the harvest level (0 = wood, 1 = stone, 2 = iron, 3 = diamond, custom levels work), so for example: 'minecraft:stone@pickaxe@2'
+	#The basic scan radius without range modules. Higher values mean more computational
+	#overhead and thus potentially worse performance while scanning.
+	#IMPORTANT: some modules such as the block and ore scanner modules will already use
+	#a reduced radius based on this value. Specifically, the ore scanners multiply this
+	#value by 0.25, and the block scanner multiplies it by 0.5.
+	#Range modules will boost the range by half this value.
+	#Range: 16 ~ 128
+	baseScanRadius = 128
 
-	# Note: Ores are added even if their harvest level doesn't change for clarity.
-	
-	tweak_mining_level = [
-	'geolosys:coal_ore@pickaxe@0',
-	'geolosys:teallite_ore@pickaxe@1', 
-	'geolosys:bauxite_ore@pickaxe@1', 
-	'geolosys:cinnabar_ore@pickaxe@1', 
-	'geolosys:malachite_ore@pickaxe@1',
-	'geolosys:azurite_ore@pickaxe@1',
-	'geolosys:hematite_ore@pickaxe@1',
-	'tp:ender_ore@pickaxe@2',
-	'geolosys:gold_ore@pickaxe@2', 
-	'geolosys:lapis_ore@pickaxe@2', 
-	'geolosys:platinum_ore@pickaxe@2', 
-	'geolosys:platinum_ore@pickaxe@2',
-	'geolosys:sphalerite_ore@pickaxe@2',
-	'geolosys:galena_ore@pickaxe@2',
-	'geolosys:kimberlite_ore@pickaxe@2',
-	'geolosys:autunite_ore@pickaxe@3',
-	'geolosys:beryl_ore@pickaxe@3', 
-	'geolosys:quartz_ore@pickaxe@3',
-	'minecraft:nether_quartz_ore@pickaxe@3'
-	]
+[blocks]
+	#Registry names of blocks that should be ignored.
+	#Blocks in this list will be excluded from the default ore list based on the forge:ores
+	#tag and it will be impossible to tune the entity module to this block.
+	ignoredBlocks = ["minecraft:command_block"]
+	#Tag names of block tags that should be ignored.
+	#Blocks matching a tag in this list will be excluded from the default ore list based on theforge:ores tag and it will be impossible to tune the entity module to this block.
+	ignoredBlockTags = []
 
+[ores]
+	#Registry names of blocks considered 'common ores', requiring the common ore scanner module.
+	commonOreBlocks = ["minecraft:clay", "tp:ender_ore"]
+	#Block tags of blocks considered 'common ores', requiring the common ore scanner module.
+	commonOreBlockTags = ["forge:ores/iron", "forge:ores/redstone", "forge:ores/quartz", "forge:ores/coal", "forge:ores/copper", "forge:ores/tin"]
+	#Registry names of blocks considered 'rare ores', requiring the rare ore scanner module.
+	rareOreBlocks = ["minecraft:glowstone"]
+	#Block tags of blocks considered 'rare ores', requiring the rare ore scanner module.
+	#Any block with the forge:ores tag is implicitly in this list, unless the block also
+	#matches an ignored or common ore block tag, or is an ignored or common block.
+	rareOreBlockTags = []
+
+[fluids]
+	#Fluid tags of fluids that should be ignored.
+	ignoredFluidTags = []
