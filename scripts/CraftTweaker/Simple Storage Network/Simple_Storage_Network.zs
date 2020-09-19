@@ -19,9 +19,9 @@ craftingTable.addShaped("storagenetwork/inventory", <item:storagenetwork:invento
 // Storage Request Table
 craftingTable.removeRecipe(<item:storagenetwork:request>);
 craftingTable.addShaped("storagenetwork/request", <item:storagenetwork:request>, [
-	[<item:create:andesite_alloy>, <item:minecraft:crafting_table>, <item:create:andesite_alloy>],
-	[<item:minecraft:crafting_table>, <item:storagenetwork:inventory>, <item:minecraft:crafting_table>],
-	[<item:create:andesite_alloy>, <item:minecraft:crafting_table>, <item:create:andesite_alloy>]
+	[<item:create:andesite_alloy>, <item:craftingautomat:autocrafter>, <item:create:andesite_alloy>],
+	[<item:storagenetwork:kabel>, <item:storagenetwork:inventory>, <item:storagenetwork:kabel>],
+	[<item:create:andesite_alloy>, <item:storagenetwork:kabel>, <item:create:andesite_alloy>]
 ]);
 
 // Cable

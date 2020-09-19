@@ -10,6 +10,7 @@
 			x: 0.0d,
 			y: 0.0d,
 			shape: "gear",
+			dependencies: [I;491],
 			size: 2.0d,
 			id: 393,
 			tasks: [{
@@ -20,7 +21,7 @@
 		},
 		{
 			x: 2.0d,
-			y: -1.0d,
+			y: -2.0d,
 			dependencies: [I;393],
 			id: 395,
 			tasks: [{
@@ -507,8 +508,8 @@
 			}]
 		},
 		{
-			x: 2.0d,
-			y: -4.0d,
+			x: 4.0d,
+			y: -6.0d,
 			dependencies: [I;473],
 			id: 483,
 			tasks: [{
@@ -518,7 +519,7 @@
 			}]
 		},
 		{
-			x: 2.0d,
+			x: 6.0d,
 			y: -6.0d,
 			dependencies: [I;483],
 			id: 485,
@@ -529,8 +530,8 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: -6.0d,
+			x: 2.0d,
+			y: -4.0d,
 			dependencies: [I;473],
 			id: 487,
 			tasks: [{

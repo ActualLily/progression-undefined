@@ -52,7 +52,7 @@ craftingTable.addShaped("conveyor_vertical", <item:immersiveengineering:conveyor
 // Item Router
 craftingTable.removeRecipe(<item:immersiveengineering:sorter>);
 craftingTable.addShaped("sorter", <item:immersiveengineering:sorter>, [
-	[<item:contenttweaker:framed_plate>, <item:immersiveengineering:conveyor_basic>, <item:contenttweaker:framed_plate>], 
+	[<tag:forge:treated_wood>, <item:contenttweaker:stone_gear>, <tag:forge:treated_wood>], 
 	[<item:immersiveengineering:conveyor_basic>, <item:immersiveengineering:conveyor_splitter>, <item:immersiveengineering:conveyor_basic>], 
-	[<item:contenttweaker:framed_plate>, <item:immersiveengineering:conveyor_basic>, <item:contenttweaker:framed_plate>]
+	[<tag:forge:treated_wood>, <item:contenttweaker:stone_gear>, <tag:forge:treated_wood>]
 ]);

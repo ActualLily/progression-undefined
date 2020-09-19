@@ -1,0 +1,20 @@
+{
+	id: 499,
+	filename: "metals",
+	order_index: 5,
+	title: "Metals",
+	quests: [{
+		disable_toast: 1,
+		x: 0.0d,
+		y: 0.0d,
+		shape: "gear",
+		dependencies: [I;497],
+		size: 2.0d,
+		id: 500,
+		tasks: [{
+			id: 501,
+			type: "item",
+			item: "create:andesite_alloy"
+		}]
+	}]
+}

@@ -3,24 +3,37 @@
 	filename: "nutrients",
 	order_index: 3,
 	title: "Nutrients",
-	quests: [{
-		disable_toast: 1,
-		x: 0.0d,
-		y: 0.0d,
-		shape: "gear",
-		dependencies: [I;152],
-		size: 2.0d,
-		id: 183,
-		tasks: [{
-			id: 184,
-			type: "item",
-			item: {
-				id: "ceramics:clay_bucket",
-				Count: 1,
-				tag: {
-					fluid: "minecraft:water"
+	quests: [
+		{
+			disable_toast: 1,
+			x: 0.0d,
+			y: 0.0d,
+			shape: "gear",
+			dependencies: [I;152],
+			size: 2.0d,
+			id: 183,
+			tasks: [{
+				id: 184,
+				type: "item",
+				item: {
+					id: "ceramics:clay_bucket",
+					Count: 1,
+					tag: {
+						fluid: "minecraft:water"
+					}
 				}
-			}
-		}]
-	}]
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -2.0d,
+			dependencies: [I;183],
+			id: 504,
+			tasks: [{
+				id: 505,
+				type: "item",
+				item: "darkutils:charm_gluttony"
+			}]
+		}
+	]
 }

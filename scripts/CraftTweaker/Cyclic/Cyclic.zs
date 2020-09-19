@@ -16,3 +16,11 @@ craftingTable.addShaped("cyclic/fisher", <item:cyclic:fisher>, [
 	[<item:waterstrainer:strainer_fisherman>, <item:minecraft:chest>, <item:waterstrainer:strainer_fisherman>],
 	[<tag:forge:plates/framed>, <item:waterstrainer:strainer_fisherman>, <tag:forge:plates/framed>]
 ]);
+
+// Adjust redstone clock
+craftingTable.removeRecipe(<item:cyclic:clock>);
+craftingTable.addShaped("cyclic/clock", <item:cyclic:clock>, [
+	[<item:immersiveengineering:treated_wood_horizontal>, <item:minecraft:redstone>, <item:immersiveengineering:treated_wood_horizontal>], 
+	[<item:minecraft:redstone>, <item:minecraft:redstone_torch>, <item:minecraft:redstone>], 
+	[<item:immersiveengineering:treated_wood_horizontal>, <item:minecraft:redstone>, <item:immersiveengineering:treated_wood_horizontal>]
+]);
