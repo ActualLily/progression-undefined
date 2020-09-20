@@ -1,14 +1,13 @@
 {
 	id: 499,
 	filename: "metals",
-	order_index: 5,
+	order_index: 6,
 	title: "Metals",
 	quests: [{
 		disable_toast: 1,
 		x: 0.0d,
 		y: 0.0d,
 		shape: "gear",
-		dependencies: [I;497],
 		size: 2.0d,
 		id: 500,
 		tasks: [{

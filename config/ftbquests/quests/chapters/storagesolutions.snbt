@@ -1,7 +1,7 @@
 {
-	id: 368,
+	id: 508,
 	filename: "storagesolutions",
-	order_index: 4,
+	order_index: 5,
 	title: "Storage Solutions",
 	icon: "minecraft:chest",
 	quests: [
@@ -14,15 +14,15 @@
 			shape: "gear",
 			dependencies: [I;247],
 			size: 2.0d,
-			id: 369
+			id: 509
 		},
 		{
 			x: 2.0d,
 			y: 0.0d,
 			dependencies: [I;369],
-			id: 371,
+			id: 510,
 			tasks: [{
-				id: 372,
+				id: 511,
 				type: "item",
 				item: "storagenetwork:kabel",
 				count: 6
@@ -32,9 +32,9 @@
 			x: 4.0d,
 			y: -2.0d,
 			dependencies: [I;375],
-			id: 373,
+			id: 512,
 			tasks: [{
-				id: 374,
+				id: 513,
 				type: "item",
 				item: "storagenetwork:request"
 			}]
@@ -43,9 +43,9 @@
 			x: 2.0d,
 			y: -2.0d,
 			dependencies: [I;371],
-			id: 375,
+			id: 514,
 			tasks: [{
-				id: 376,
+				id: 515,
 				type: "item",
 				item: "storagenetwork:inventory",
 				count: 2
@@ -55,9 +55,9 @@
 			x: 2.0d,
 			y: -4.0d,
 			dependencies: [I;375],
-			id: 377,
+			id: 516,
 			tasks: [{
-				id: 378,
+				id: 517,
 				type: "item",
 				item: "storagenetwork:master"
 			}]
@@ -66,9 +66,9 @@
 			x: 4.0d,
 			y: 0.0d,
 			dependencies: [I;371],
-			id: 379,
+			id: 518,
 			tasks: [{
-				id: 380,
+				id: 519,
 				type: "item",
 				item: "storagenetwork:storage_kabel"
 			}]
@@ -77,9 +77,9 @@
 			x: 2.0d,
 			y: 2.0d,
 			dependencies: [I;371],
-			id: 381,
+			id: 520,
 			tasks: [{
-				id: 382,
+				id: 521,
 				type: "item",
 				item: "storagenetwork:import_kabel"
 			}]
@@ -88,9 +88,9 @@
 			x: 4.0d,
 			y: 2.0d,
 			dependencies: [I;371],
-			id: 383,
+			id: 522,
 			tasks: [{
-				id: 384,
+				id: 523,
 				type: "item",
 				item: "storagenetwork:export_kabel"
 			}]
@@ -99,9 +99,9 @@
 			x: 2.0d,
 			y: 4.0d,
 			dependencies: [I;381],
-			id: 385,
+			id: 524,
 			tasks: [{
-				id: 386,
+				id: 525,
 				type: "item",
 				item: "storagenetwork:import_filter_kabel"
 			}]
@@ -110,9 +110,9 @@
 			x: 6.0d,
 			y: 0.0d,
 			dependencies: [I;379],
-			id: 387,
+			id: 526,
 			tasks: [{
-				id: 388,
+				id: 527,
 				type: "item",
 				item: "storagenetwork:filter_kabel"
 			}]
@@ -122,9 +122,9 @@
 			y: -2.0d,
 			description: ["The 2x2 drawers are excellent to put under a hopping bonsai pot, since all bonsai trees only have 4 drops at most."],
 			dependencies: [I;369],
-			id: 389,
+			id: 528,
 			tasks: [{
-				id: 390,
+				id: 529,
 				type: "item",
 				item: "storagedrawers:oak_full_drawers_4"
 			}]
@@ -133,9 +133,9 @@
 			x: 0.0d,
 			y: -4.0d,
 			dependencies: [I;389],
-			id: 391,
+			id: 530,
 			tasks: [{
-				id: 392,
+				id: 531,
 				type: "item",
 				item: "storagedrawers:compacting_drawers_3"
 			}]

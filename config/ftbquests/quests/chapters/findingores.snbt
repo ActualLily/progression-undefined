@@ -10,7 +10,6 @@
 			x: 0.0d,
 			y: 0.0d,
 			shape: "gear",
-			dependencies: [I;491],
 			size: 2.0d,
 			id: 393,
 			tasks: [{

@@ -40,6 +40,6 @@ for ore, dust in crushableDusts {
 
 for dirty, clean in washableDusts {
 	craftingTable.addShapeless("dustcleaning_" + clean.registryName.split(":")[1], clean, [dirty, <item:pamhc2foodcore:freshwateritem>]);
-	craftingTable.addShapeless("dustcleaning_" + clean.registryName.split(":")[1] + "_claybucket", clean, [dirty, <item:ceramics:clay_bucket>.withTag({fluid: "minecraft:water" as string})]);
+	craftingTable.addShapeless("dustcleaning_" + clean.registryName.split(":")[1] + "_claybucket", clean, [dirty, <item:ceramics:clay_bucket>.withTag({fluid: "minecraft:water" as string}).transformReplace(<item:ceramics:clay_bucket>)]);
 	craftingTable.addShapeless("dustcleaning_" + clean.registryName.split(":")[1] + "_ironbucket", clean, [dirty, <item:minecraft:water_bucket>]);
 }

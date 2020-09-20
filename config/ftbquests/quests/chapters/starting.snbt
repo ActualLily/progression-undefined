@@ -49,6 +49,16 @@
 							Damage: 0
 						}
 					}
+				},
+				{
+					id: 548,
+					type: "choice",
+					table: 0
+				},
+				{
+					id: 549,
+					type: "choice",
+					table: 0
 				}
 			]
 		},
@@ -149,11 +159,7 @@
 			}],
 			rewards: [{
 				id: 119,
-				type: "item",
-				item: {
-					id: "forbidden_arcanus:mysterywood_sapling",
-					Count: 4
-				}
+				type: "item"
 			}]
 		},
 		{
@@ -221,8 +227,8 @@
 					Damage: 0
 				}
 			},
-			x: -2.0d,
-			y: 6.0d,
+			x: 0.0d,
+			y: 8.0d,
 			dependencies: [I;126],
 			id: 128,
 			tasks: [
@@ -282,7 +288,7 @@
 		},
 		{
 			x: 2.0d,
-			y: 6.0d,
+			y: 8.0d,
 			dependencies: [I;126],
 			id: 134,
 			tasks: [{
@@ -294,9 +300,7 @@
 		{
 			x: -2.0d,
 			y: 4.0d,
-			shape: "gear",
 			dependencies: [I;123],
-			size: 2.0d,
 			id: 152,
 			tasks: [{
 				id: 153,
@@ -377,8 +381,8 @@
 			}]
 		},
 		{
-			x: 10.0d,
-			y: -4.0d,
+			x: 8.0d,
+			y: -2.0d,
 			shape: "gear",
 			dependencies: [I;160],
 			size: 2.0d,
@@ -488,8 +492,12 @@
 		},
 		{
 			x: 8.0d,
-			y: 2.0d,
-			dependencies: [I;276],
+			y: 0.0d,
+			dependencies: [I;
+				276,
+				166,
+				287
+			],
 			id: 268,
 			tasks: [{
 				id: 269,
@@ -510,7 +518,7 @@
 		},
 		{
 			x: 6.0d,
-			y: 2.0d,
+			y: 0.0d,
 			dependencies: [I;274],
 			id: 276,
 			tasks: [{
@@ -569,7 +577,7 @@
 		},
 		{
 			x: 4.0d,
-			y: 6.0d,
+			y: 8.0d,
 			dependencies: [I;
 				284,
 				134
@@ -579,6 +587,83 @@
 				id: 289,
 				type: "item",
 				item: "bonsaitrees2:hopping_bonsaipot"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 2.0d,
+			dependencies: [I;268],
+			id: 536,
+			tasks: [{
+				id: 537,
+				type: "item",
+				item: "craftingautomat:autocrafter"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 4.0d,
+			shape: "gear",
+			dependencies: [I;536],
+			size: 2.0d,
+			id: 538,
+			tasks: [{
+				id: 539,
+				type: "item",
+				item: "cookingforblockheads:cooking_table"
+			}]
+		},
+		{
+			title: "Easy Fresh Water",
+			x: 8.0d,
+			y: 6.0d,
+			description: ["Having both a sink and a cooking table next to each other will allow you to easily craft as much fresh water as you need."],
+			dependencies: [I;
+				538,
+				542
+			],
+			id: 540,
+			tasks: [{
+				id: 541,
+				type: "item",
+				item: "pamhc2foodcore:freshwateritem",
+				count: 256
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 6.0d,
+			dependencies: [I;126],
+			id: 542,
+			tasks: [{
+				id: 543,
+				type: "item",
+				item: "cookingforblockheads:sink"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 2.0d,
+			dependencies: [I;276],
+			id: 552,
+			tasks: [{
+				id: 553,
+				type: "item",
+				item: "cobblefordays:tier_1"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 4.0d,
+			dependencies: [I;
+				552,
+				165
+			],
+			id: 554,
+			tasks: [{
+				id: 555,
+				type: "item",
+				item: "cobblefordays:tier_2"
 			}]
 		}
 	]
