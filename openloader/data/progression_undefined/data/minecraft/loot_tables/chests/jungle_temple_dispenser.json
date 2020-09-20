@@ -1,28 +1,195 @@
 {
   "type": "minecraft:chest",
   "pools": [
+	{
+		"rolls": 1,
+		"entries": [
+			{
+				"type": "minecraft:item",
+				"functions": [
+					{
+					"function": "minecraft:set_count",
+					"count": {
+						"min": 2.0,
+						"max": 6.0,
+						"type": "minecraft:uniform"
+					}
+				}
+			],
+            "name": "minecraft:arrow"
+			}
+		]
+	},
     {
       "rolls": {
-        "min": 1.0,
-        "max": 2.0,
+        "min": 2.0,
+        "max": 4.0,
         "type": "minecraft:uniform"
       },
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 30,
+          "weight": 50,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 7.0,
+                "min": 1.0,
+                "max": 4.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "minecraft:arrow"
-        }
+        },
+		{
+          "type": "minecraft:item",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            },
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Potion:\"minecraft:slowness\"}"
+			}
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+		{
+          "type": "minecraft:item",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            },
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Potion:\"minecraft:poison\"}"
+			}
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+		{
+          "type": "minecraft:item",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            },
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Potion:\"minecraft:long_weakness\"}"
+			}
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+		{
+          "type": "minecraft:item",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            },
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Potion:\"apotheosis:long_fatigue\"}"
+			}
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+		{
+          "type": "minecraft:item",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 4.0,
+                "type": "minecraft:uniform"
+              }
+            },
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Potion:\"apotheosis:wither\"}"
+			}
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+		{
+          "type": "minecraft:item",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 2.0,
+                "type": "minecraft:uniform"
+              }
+            },
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{Potion:\"cyclic:stun\"}"
+			}
+          ],
+          "name": "minecraft:tipped_arrow"
+        },
+		{
+          "type": "minecraft:item",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 5.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "apotheosis:broadhead_arrow"
+        },
+		{
+          "type": "minecraft:item",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 5.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "apotheosis:obsidian_arrow"
+        },
+		{
+			"type": "minecraft:empty",
+			"weight": 50
+		}
       ]
     }
   ]

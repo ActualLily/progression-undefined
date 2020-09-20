@@ -3,44 +3,34 @@
   "pools": [
     {
       "rolls": {
-        "min": 2.0,
-        "max": 8.0,
+        "min": 3.0,
+        "max": 5.0,
         "type": "minecraft:uniform"
       },
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 25,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 3.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "minecraft:apple"
+          "weight": 20,
+          "name": "astralsorcery:constellation_paper"
         },
         {
           "type": "minecraft:item",
-          "weight": 25,
+          "weight": 12,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1.0,
-                "max": 4.0,
+                "max": 3.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "minecraft:charcoal"
+          "name": "astralsorcery:aquamarine"
         },
         {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 8,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -51,11 +41,11 @@
               }
             }
           ],
-          "name": "create:copper_nugget"
+          "name": "minecraft:bone"
         },
 		{
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 8,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -66,17 +56,17 @@
               }
             }
           ],
-          "name": "mekanism:nugget_tin"
+          "name": "minecraft:rotten_flesh"
         },
-		{
+        {
           "type": "minecraft:item",
-          "weight": 5,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
                 "min": 1.0,
-                "max": 3.0,
+                "max": 2.0,
                 "type": "minecraft:uniform"
               }
             }
@@ -85,45 +75,93 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:stone_axe"
-        },
-		{
-          "type": "minecraft:item",
-          "weight": 2,
-          "name": "minecraft:stone_pickaxe"
-        },
-		{
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:stone_shovel"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "name": "minecraft:rotten_flesh"
-        },
-        {
-          "type": "minecraft:item",
-		  "weight": 2,
-          "name": "minecraft:emerald"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 15,
+          "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
+                "min": 1.0,
                 "max": 3.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "minecraft:snowball"
+          "name": "minecraft:prismarine_crystals"
+        },
+		{
+          "type": "minecraft:item",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:prismarine_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "ars_nouveau:mana_bloom_crop"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:glowstone_dust"
+        },
+		{
+          "type": "minecraft:item",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1.0,
+                "max": 3.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:redstone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 2,
+          "name": "minecraft:ender_pearl"
         }
-      ]
+      ],
+      "bonus_rolls": {
+        "min": 1.0,
+        "max": 2.0
+      }
     }
   ]
 }
