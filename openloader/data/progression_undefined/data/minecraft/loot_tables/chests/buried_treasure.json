@@ -2,11 +2,68 @@
   "type": "minecraft:chest",
   "pools": [
     {
+	  "__comment": "Heart of the Sea entry",
       "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:heart_of_the_sea"
+        }
+      ]
+    },
+	{
+	  "__comment": "Relic entries",
+      "rolls": 
+	  {
+		"min": 1.0,
+		"max": 2.0,
+		"type": "minecraft:uniform"
+	  },
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "weight": 5,
+          "name": "cyclic:charm_wither"
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 5,
+          "name": "cyclic:charm_fire"
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 5,
+          "name": "cyclic:charm_antidote"
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 5,
+          "name": "cyclic:charm_void"
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 5,
+          "name": "darkutils:charm_portal"
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 5,
+          "name": "darkutils:charm_sleep"
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 5,
+          "name": "darkutils:charm_experience"
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 3,
+          "name": "immersiveengineering:shader_bag_epic"
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 2,
+          "name": "immersiveengineering:shader_bag_ie_masterwork"
         }
       ]
     },
@@ -17,21 +74,6 @@
         "type": "minecraft:uniform"
       },
       "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 20,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 4.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "minecraft:iron_ingot"
-        },
         {
           "type": "minecraft:item",
           "weight": 10,
@@ -99,7 +141,7 @@
               }
             }
           ],
-          "name": "minecraft:diamond"
+          "name": "minecraft:prismarine_shard"
         },
         {
           "type": "minecraft:item",
@@ -119,19 +161,167 @@
       ]
     },
     {
-      "rolls": {
-        "min": 0.0,
-        "max": 1.0,
-        "type": "minecraft:uniform"
-      },
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:leather_chestplate"
+		  "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Sword\\\"}\"}}"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			}
+		  ],
+          "name": "tp:emerald_sword"
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_sword"
+		  "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Pickaxe\\\"}\"}}"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			}
+		  ],
+          "name": "tp:emerald_pickaxe"
+        },
+		{
+          "type": "minecraft:item",
+		  "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Axe\\\"}\"}}"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			}
+		  ],
+          "name": "tp:emerald_axe"
+        },
+		{
+          "type": "minecraft:item",
+		  "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Shovel\\\"}\"}}"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			}
+		  ],
+          "name": "tp:emerald_spade"
+        },
+		{
+          "type": "minecraft:item",
+		  "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Battleaxe\\\"}\"}}"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			}
+		  ],
+          "name": "tp:emerald_battle"
+        },
+		{
+          "type": "minecraft:item",
+		  "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Spear\\\"}\"}}"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			}
+		  ],
+          "name": "tp:emerald_spear"
+        },
+		{
+          "type": "minecraft:item",
+		  "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Helmet\\\"}\"}}"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			}
+		  ],
+          "name": "tp:emerald_helmet"
+        },
+		{
+          "type": "minecraft:item",
+		  "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Chestplate\\\"}\"}}"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			}
+		  ],
+          "name": "tp:emerald_chestplate"
+        },
+		{
+          "type": "minecraft:item",
+		  "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Greaves\\\"}\"}}"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			}
+		  ],
+          "name": "tp:emerald_leggings"
+        },
+		{
+          "type": "minecraft:item",
+		  "functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Boots\\\"}\"}}"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			},
+			{
+				"function": "minecraft:enchant_randomly"
+			}
+		  ],
+          "name": "tp:emerald_boots"
         }
       ]
     },
@@ -144,13 +334,13 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 4.0,
+                "min": 4.0,
+                "max": 6.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "minecraft:cooked_cod"
+          "name": "pamhc2foodextended:meatfeastpizzaitem"
         },
         {
           "type": "minecraft:item",
@@ -158,13 +348,13 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 4.0,
+                "min": 4.0,
+                "max": 6.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "minecraft:cooked_salmon"
+          "name": "pamhc2foodextended:spaghettidinneritem"
         }
       ]
     }
