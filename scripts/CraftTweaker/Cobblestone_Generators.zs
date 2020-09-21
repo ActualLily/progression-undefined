@@ -14,9 +14,9 @@ mods.jei.JEI.hideItem(<item:tp:cobblegen_emerald_block>);
 
 craftingTable.removeByModid("cobblefordays");
 craftingTable.addShaped("cobblefordays/tier_1", <item:cobblefordays:tier_1>, [
-	[<item:contenttweaker:framed_plate>, <item:contenttweaker:framed_plate>, <item:contenttweaker:framed_plate>], 
+	[<tag:forge:plates/wooden>, <tag:forge:plates/wooden>, <tag:forge:plates/wooden>], 
 	[<item:ceramics:cracked_clay_bucket>.withTag({fluid: "minecraft:lava" as string}), <item:minecraft:glass>, <item:ceramics:clay_bucket>.withTag({fluid: "minecraft:water" as string}).transformReplace(<item:ceramics:clay_bucket>)], 
-	[<item:contenttweaker:framed_plate>, <item:contenttweaker:framed_plate>, <item:contenttweaker:framed_plate>]
+	[<tag:forge:plates/wooden>, <tag:forge:plates/wooden>, <tag:forge:plates/wooden>]
 ]);
 
 craftingTable.addShaped("cobblefordays/tier_2", <item:cobblefordays:tier_2>, [
