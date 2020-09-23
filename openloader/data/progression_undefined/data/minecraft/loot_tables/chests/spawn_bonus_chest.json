@@ -2,6 +2,28 @@
   "type": "minecraft:chest",
   "pools": [
     {
+		"rolls": 1,
+		"conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "advancements": {
+                    "progression_undefined:iron_cluster": true
+                  }
+                }
+              }
+            }
+          ],
+		"entries": [
+			{
+				"type": "minecraft:item",
+				"name": "pamhc2foodextended:energydrinkitem"
+			}
+		]
+	},
+    {
       "rolls": 1,
       "entries": [
         {

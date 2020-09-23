@@ -3,8 +3,8 @@
   "pools": [
     {
       "rolls": {
-        "min": 2.0,
-        "max": 3.0,
+        "min": 2,
+        "max": 3,
         "type": "minecraft:uniform"
       },
       "entries": [
@@ -19,11 +19,7 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 3.0,
-                "type": "minecraft:uniform"
-              }
+              "count": 1
             }
           ],
           "name": "minecraft:diamond"
@@ -31,12 +27,25 @@
         {
           "type": "minecraft:item",
           "weight": 10,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "advancements": {
+                    "progression_undefined:iron_cluster": true
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 5.0,
+                "min": 1,
+                "max": 5,
                 "type": "minecraft:uniform"
               }
             }
@@ -50,8 +59,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
@@ -65,8 +74,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 9.0,
+                "min": 4,
+                "max": 9,
                 "type": "minecraft:uniform"
               }
             }
@@ -80,8 +89,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
@@ -95,14 +104,63 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "minecraft:apple"
         },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:saddle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_horse_armor"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30,
+              "treasure": true
+            }
+          ],
+          "name": "minecraft:book"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1,
+        "type": "minecraft:uniform"
+      },
+      "conditions": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "player": {
+              "advancements": {
+                "progression_undefined:iron_cluster": true
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
         {
           "type": "minecraft:item",
           "weight": 5,
@@ -132,37 +190,6 @@
           "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:iron_boots"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:golden_apple"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:saddle"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_horse_armor"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:golden_horse_armor"
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_horse_armor"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": 30,
-              "treasure": true
-            }
-          ],
-          "name": "minecraft:book"
         }
       ]
     }

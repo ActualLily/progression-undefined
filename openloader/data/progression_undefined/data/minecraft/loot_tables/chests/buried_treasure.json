@@ -2,7 +2,7 @@
   "type": "minecraft:chest",
   "pools": [
     {
-	  "__comment": "Heart of the Sea entry",
+      "_comment": "Heart of the Sea entry",
       "rolls": 1,
       "entries": [
         {
@@ -11,66 +11,65 @@
         }
       ]
     },
-	{
-	  "__comment": "Relic entries",
-      "rolls": 
-	  {
-		"min": 1.0,
-		"max": 2.0,
-		"type": "minecraft:uniform"
-	  },
+    {
+      "_comment": "Relic entries",
+      "rolls": {
+        "min": 1,
+        "max": 2,
+        "type": "minecraft:uniform"
+      },
       "entries": [
         {
           "type": "minecraft:item",
-		  "weight": 5,
+          "weight": 5,
           "name": "cyclic:charm_wither"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "weight": 5,
+          "weight": 5,
           "name": "cyclic:charm_fire"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "weight": 5,
+          "weight": 5,
           "name": "cyclic:charm_antidote"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "weight": 5,
+          "weight": 5,
           "name": "cyclic:charm_void"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "weight": 5,
+          "weight": 5,
           "name": "darkutils:charm_portal"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "weight": 5,
+          "weight": 5,
           "name": "darkutils:charm_sleep"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "weight": 5,
+          "weight": 5,
           "name": "darkutils:charm_experience"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "weight": 3,
+          "weight": 3,
           "name": "immersiveengineering:shader_bag_epic"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "weight": 2,
+          "weight": 2,
           "name": "immersiveengineering:shader_bag_ie_masterwork"
         }
       ]
     },
     {
       "rolls": {
-        "min": 5.0,
-        "max": 8.0,
+        "min": 5,
+        "max": 8,
         "type": "minecraft:uniform"
       },
       "entries": [
@@ -81,8 +80,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 4.0,
+                "min": 1,
+                "max": 4,
                 "type": "minecraft:uniform"
               }
             }
@@ -92,12 +91,40 @@
         {
           "type": "minecraft:item",
           "weight": 5,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "advancements": {
+                    "progression_undefined:iron_cluster": true
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 2.0,
+                "min": 2,
+                "max": 4,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:iron_ingot"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2,
                 "type": "minecraft:uniform"
               }
             }
@@ -108,8 +135,8 @@
     },
     {
       "rolls": {
-        "min": 1.0,
-        "max": 3.0,
+        "min": 1,
+        "max": 3,
         "type": "minecraft:uniform"
       },
       "entries": [
@@ -120,8 +147,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 8.0,
+                "min": 4,
+                "max": 8,
                 "type": "minecraft:uniform"
               }
             }
@@ -135,8 +162,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 2.0,
+                "min": 1,
+                "max": 2,
                 "type": "minecraft:uniform"
               }
             }
@@ -150,8 +177,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 5.0,
+                "min": 1,
+                "max": 5,
                 "type": "minecraft:uniform"
               }
             }
@@ -165,162 +192,162 @@
       "entries": [
         {
           "type": "minecraft:item",
-		  "functions": [
-			{
-				"function": "minecraft:set_nbt",
-				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Sword\\\"}\"}}"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			}
-		  ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Sword\\\"}\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
           "name": "tp:emerald_sword"
         },
         {
           "type": "minecraft:item",
-		  "functions": [
-			{
-				"function": "minecraft:set_nbt",
-				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Pickaxe\\\"}\"}}"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			}
-		  ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Pickaxe\\\"}\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
           "name": "tp:emerald_pickaxe"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "functions": [
-			{
-				"function": "minecraft:set_nbt",
-				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Axe\\\"}\"}}"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			}
-		  ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Axe\\\"}\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
           "name": "tp:emerald_axe"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "functions": [
-			{
-				"function": "minecraft:set_nbt",
-				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Shovel\\\"}\"}}"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			}
-		  ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Shovel\\\"}\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
           "name": "tp:emerald_spade"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "functions": [
-			{
-				"function": "minecraft:set_nbt",
-				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Battleaxe\\\"}\"}}"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			}
-		  ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Battleaxe\\\"}\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
           "name": "tp:emerald_battle"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "functions": [
-			{
-				"function": "minecraft:set_nbt",
-				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Spear\\\"}\"}}"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			}
-		  ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Spear\\\"}\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
           "name": "tp:emerald_spear"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "functions": [
-			{
-				"function": "minecraft:set_nbt",
-				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Helmet\\\"}\"}}"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			}
-		  ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Helmet\\\"}\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
           "name": "tp:emerald_helmet"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "functions": [
-			{
-				"function": "minecraft:set_nbt",
-				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Chestplate\\\"}\"}}"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			}
-		  ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Chestplate\\\"}\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
           "name": "tp:emerald_chestplate"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "functions": [
-			{
-				"function": "minecraft:set_nbt",
-				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Greaves\\\"}\"}}"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			}
-		  ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Greaves\\\"}\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
           "name": "tp:emerald_leggings"
         },
-		{
+        {
           "type": "minecraft:item",
-		  "functions": [
-			{
-				"function": "minecraft:set_nbt",
-				"tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Boots\\\"}\"}}"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			},
-			{
-				"function": "minecraft:enchant_randomly"
-			}
-		  ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display: {Name: \"{\\\"text\\\":\\\"Relic Boots\\\"}\"}}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
           "name": "tp:emerald_boots"
         }
       ]
@@ -334,8 +361,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 6.0,
+                "min": 4,
+                "max": 6,
                 "type": "minecraft:uniform"
               }
             }
@@ -348,8 +375,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 6.0,
+                "min": 4,
+                "max": 6,
                 "type": "minecraft:uniform"
               }
             }

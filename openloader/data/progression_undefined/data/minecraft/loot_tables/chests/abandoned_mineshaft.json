@@ -29,14 +29,14 @@
           ],
           "name": "minecraft:golden_pickaxe"
         },
-		{
+        {
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
             },
-			{
+            {
               "function": "minecraft:enchant_randomly"
             }
           ],
@@ -50,11 +50,39 @@
     },
     {
       "rolls": {
-        "min": 2.0,
-        "max": 4.0,
+        "min": 2,
+        "max": 4,
         "type": "minecraft:uniform"
       },
       "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "advancements": {
+                    "progression_undefined:iron_cluster": true
+                  }
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 5,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:iron_nugget"
+        },
         {
           "type": "minecraft:item",
           "weight": 10,
@@ -62,8 +90,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 5.0,
+                "min": 1,
+                "max": 5,
                 "type": "minecraft:uniform"
               }
             }
@@ -77,23 +105,23 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 5.0,
+                "min": 1,
+                "max": 5,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "mekanism:nugget_tin"
         },
-		{
+        {
           "type": "minecraft:item",
           "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 5.0,
+                "min": 1,
+                "max": 5,
                 "type": "minecraft:uniform"
               }
             }
@@ -107,8 +135,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 9.0,
+                "min": 4,
+                "max": 9,
                 "type": "minecraft:uniform"
               }
             }
@@ -122,8 +150,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 9.0,
+                "min": 4,
+                "max": 9,
                 "type": "minecraft:uniform"
               }
             }
@@ -137,8 +165,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 3.0,
-                "max": 8.0,
+                "min": 3,
+                "max": 8,
                 "type": "minecraft:uniform"
               }
             }
@@ -152,8 +180,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 4.0,
+                "min": 2,
+                "max": 4,
                 "type": "minecraft:uniform"
               }
             }
@@ -167,8 +195,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 4.0,
+                "min": 2,
+                "max": 4,
                 "type": "minecraft:uniform"
               }
             }
@@ -187,8 +215,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 4.0,
-                "max": 8.0,
+                "min": 4,
+                "max": 8,
                 "type": "minecraft:uniform"
               }
             }
@@ -202,8 +230,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 4.0,
+                "min": 1,
+                "max": 4,
                 "type": "minecraft:uniform"
               }
             }
@@ -217,8 +245,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 4.0,
+                "min": 1,
+                "max": 4,
                 "type": "minecraft:uniform"
               }
             }
@@ -232,8 +260,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 4.0,
+                "min": 1,
+                "max": 4,
                 "type": "minecraft:uniform"
               }
             }
@@ -247,8 +275,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 16.0,
+                "min": 1,
+                "max": 16,
                 "type": "minecraft:uniform"
               }
             }
