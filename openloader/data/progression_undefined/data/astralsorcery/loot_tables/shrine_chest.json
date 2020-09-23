@@ -3,8 +3,8 @@
   "pools": [
     {
       "rolls": {
-        "min": 3.0,
-        "max": 5.0,
+        "min": 3,
+        "max": 5,
         "type": "minecraft:uniform"
       },
       "entries": [
@@ -20,8 +20,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
@@ -35,23 +35,23 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "minecraft:bone"
         },
-		{
+        {
           "type": "minecraft:item",
           "weight": 8,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
@@ -65,8 +65,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 2.0,
+                "min": 1,
+                "max": 2,
                 "type": "minecraft:uniform"
               }
             }
@@ -75,28 +75,56 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 4,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "advancements": {
+                    "progression_undefined:iron_cluster": true
+                  }
+                }
+              }
+            }
+          ],
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 2,
+                "max": 4,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "minecraft:prismarine_crystals"
+          "name": "minecraft:iron_nugget"
         },
-		{
+        {
           "type": "minecraft:item",
           "weight": 6,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:prismarine_crystals"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
@@ -110,8 +138,8 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
@@ -125,23 +153,23 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "minecraft:glowstone_dust"
         },
-		{
+        {
           "type": "minecraft:item",
           "weight": 8,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
@@ -159,8 +187,8 @@
         }
       ],
       "bonus_rolls": {
-        "min": 1.0,
-        "max": 2.0
+        "min": 1,
+        "max": 2
       }
     }
   ]

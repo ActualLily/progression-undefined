@@ -1,22 +1,22 @@
 {
   "pools": [
     {
-      "rolls": 4,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "weight": 20,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 2.0,
-                "max": 7.0,
+                "min": 2,
+                "max": 4,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "immersiveengineering:stick_treated"
+          "name": "quark:iron_chain"
         },
         {
           "type": "minecraft:item",
@@ -25,28 +25,52 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 4.0,
+                "min": 1,
+                "max": 2,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "immersiveengineering:stick_iron"
+          "name": "contenttweaker:stone_mechanical_component"
         },
         {
           "type": "minecraft:item",
-          "weight": 6,
+          "weight": 4,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 4.0,
+                "min": 2,
+                "max": 3,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "immersiveengineering:stick_steel"
+          "name": "contenttweaker:stone_mechanical_component"
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 3,
+        "max": 5,
+        "type": "minecraft:uniform"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "contenttweaker:stone_gear"
         },
         {
           "type": "minecraft:item",
@@ -55,13 +79,13 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 4.0,
+                "min": 2,
+                "max": 7,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "immersiveengineering:stick_aluminum"
+          "name": "create:copper_nugget"
         },
         {
           "type": "minecraft:item",
@@ -70,13 +94,13 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 2,
+                "max": 7,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "immersiveengineering:hemp_fabric"
+          "name": "mekanism:nugget_tin"
         },
         {
           "type": "minecraft:item",
@@ -85,28 +109,13 @@
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 3.0,
+                "min": 1,
+                "max": 5,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "immersiveengineering:coal_coke"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 8,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 2.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "immersiveengineering:component_iron"
+          "name": "immersiveengineering:nugget_aluminum"
         },
         {
           "type": "minecraft:item",
@@ -114,65 +123,9 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 1.0
-            }
-          ],
-          "name": "immersiveengineering:component_steel"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 4.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "minecraft:iron_ingot"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 4.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "immersiveengineering:ingot_copper"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 4.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "immersiveengineering:ingot_aluminum"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 9,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 4.0,
+                "min": 1,
+                "max": 5,
                 "type": "minecraft:uniform"
               }
             }
@@ -181,33 +134,61 @@
         },
         {
           "type": "minecraft:item",
-          "weight": 7,
+          "weight": 5,
           "functions": [
             {
               "function": "minecraft:set_count",
               "count": {
-                "min": 1.0,
-                "max": 2.0,
-                "type": "minecraft:uniform"
-              }
-            }
-          ],
-          "name": "immersiveengineering:nugget_silver"
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 7,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1.0,
-                "max": 2.0,
+                "min": 1,
+                "max": 4,
                 "type": "minecraft:uniform"
               }
             }
           ],
           "name": "immersiveengineering:nugget_nickel"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "advancements": {
+                    "progression_undefined:iron_cluster": true
+                  }
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:iron_nugget"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 6,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "immersiveengineering:coal_coke"
         },
         {
           "type": "minecraft:item",

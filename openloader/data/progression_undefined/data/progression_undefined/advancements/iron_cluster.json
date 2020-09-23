@@ -1,0 +1,40 @@
+{
+    "display": {
+        "title": {
+            "text": "Stage 2",
+            "color": "white",
+			"bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Obtain: Iron Cluster",
+            "color": "green",
+			"bold": false,
+            "italic": false
+        },
+        "icon": {
+            "item": "geolosys:iron_cluster"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+	"parent": "progression_undefined:andesite_alloy",
+    "criteria": {
+        "iron cluster": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "geolosys:iron_cluster",
+                        "count": {
+							"min": 1,
+							"max": 1
+						}
+                    }
+                ]
+            }
+        }
+    }
+}

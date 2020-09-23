@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "text": "Stage 0",
+            "color": "white",
+			"bold": true,
+            "italic": true
+        },
+        "description": {
+            "text": "Your journey awaits...",
+			"color": "green",
+			"bold": false,
+			"italic": false
+        },
+        "icon": {
+            "item": "contenttweaker:stone_brick_single"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+    },
+    "criteria": {
+        "on spawn": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

@@ -53,6 +53,34 @@
           ],
           "name": "mekanism:nugget_tin"
         },
+		{
+          "type": "minecraft:item",
+          "weight": 8,
+          "conditions": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "player": {
+                  "advancements": {
+                    "progression_undefined:iron_cluster": true
+                  }
+                }
+              }
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 4,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "minecraft:iron_ingot"
+        },
         {
           "type": "minecraft:item",
           "weight": 5,
