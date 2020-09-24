@@ -2,23 +2,23 @@
 #Loot configuration
 [loot]
 	#Is the mod's vanilla mob loot enabled?
-	mob_loot = true
+	mob_loot = false
 	#Is the mod's vanilla structure loot enabled?
-	struct_loot = true
+	struct_loot = false
 
 	#Structure loot settings
 	[loot.structure]
 		#Chance of a BountifulBaubles item spawning in a nether fortress chest
 		#(excluding recall/wormhole potions). 0 to disable.
 		#Range: 0.0 ~ 1.0
-		nether_base = 0.2
+		nether_base = 0.0
 		#Chance of recall or wormhole potions spawning in a dungeon chest. 0 to disable.
 		#Range: 0.0 ~ 1.0
-		dungeon_potion = 0.75
+		dungeon_potion = 0.0
 		#Chance of a BountifulBaubles item spawning in a dungeon chest
 		#(excluding recall/wormhole potions). 0 to disable.
 		#Range: 0.0 ~ 1.0
-		dungeon_base = 0.35
+		dungeon_base = 0.0
 
 #Item configuration
 [items]
