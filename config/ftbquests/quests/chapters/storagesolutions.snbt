@@ -1,7 +1,7 @@
 {
 	id: 508,
 	filename: "storagesolutions",
-	order_index: 5,
+	order_index: 4,
 	title: "Storage Solutions",
 	icon: "minecraft:chest",
 	quests: [
@@ -19,7 +19,6 @@
 		{
 			x: 2.0d,
 			y: 0.0d,
-			dependencies: [I;369],
 			id: 510,
 			tasks: [{
 				id: 511,
@@ -31,7 +30,6 @@
 		{
 			x: 4.0d,
 			y: -2.0d,
-			dependencies: [I;375],
 			id: 512,
 			tasks: [{
 				id: 513,
@@ -42,7 +40,6 @@
 		{
 			x: 2.0d,
 			y: -2.0d,
-			dependencies: [I;371],
 			id: 514,
 			tasks: [{
 				id: 515,
@@ -54,7 +51,6 @@
 		{
 			x: 2.0d,
 			y: -4.0d,
-			dependencies: [I;375],
 			id: 516,
 			tasks: [{
 				id: 517,
@@ -65,7 +61,6 @@
 		{
 			x: 4.0d,
 			y: 0.0d,
-			dependencies: [I;371],
 			id: 518,
 			tasks: [{
 				id: 519,
@@ -76,7 +71,6 @@
 		{
 			x: 2.0d,
 			y: 2.0d,
-			dependencies: [I;371],
 			id: 520,
 			tasks: [{
 				id: 521,
@@ -87,7 +81,6 @@
 		{
 			x: 4.0d,
 			y: 2.0d,
-			dependencies: [I;371],
 			id: 522,
 			tasks: [{
 				id: 523,
@@ -98,7 +91,6 @@
 		{
 			x: 2.0d,
 			y: 4.0d,
-			dependencies: [I;381],
 			id: 524,
 			tasks: [{
 				id: 525,
@@ -109,7 +101,6 @@
 		{
 			x: 6.0d,
 			y: 0.0d,
-			dependencies: [I;379],
 			id: 526,
 			tasks: [{
 				id: 527,
@@ -121,7 +112,6 @@
 			x: 0.0d,
 			y: -2.0d,
 			description: ["The 2x2 drawers are excellent to put under a hopping bonsai pot, since all bonsai trees only have 4 drops at most."],
-			dependencies: [I;369],
 			id: 528,
 			tasks: [{
 				id: 529,
@@ -132,7 +122,6 @@
 		{
 			x: 0.0d,
 			y: -4.0d,
-			dependencies: [I;389],
 			id: 530,
 			tasks: [{
 				id: 531,

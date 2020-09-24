@@ -64,8 +64,7 @@
 		},
 		{
 			x: 0.0d,
-			y: -4.0d,
-			dependencies: [I;106],
+			y: -2.0d,
 			id: 97,
 			tasks: [{
 				id: 98,
@@ -145,21 +144,6 @@
 				id: 105,
 				type: "item",
 				item: "minecraft:sheep_spawn_egg"
-			}]
-		},
-		{
-			x: 0.0d,
-			y: -2.0d,
-			dependencies: [I;92],
-			id: 106,
-			tasks: [{
-				id: 107,
-				type: "item",
-				item: "extendedcrafting:handheld_table"
-			}],
-			rewards: [{
-				id: 119,
-				type: "item"
 			}]
 		},
 		{
@@ -422,7 +406,7 @@
 		},
 		{
 			x: -2.0d,
-			y: 0.0d,
+			y: -2.0d,
 			dependencies: [I;92],
 			id: 185,
 			tasks: [{
@@ -664,6 +648,39 @@
 				id: 555,
 				type: "item",
 				item: "cobblefordays:tier_2"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 0.0d,
+			dependencies: [I;
+				92,
+				274
+			],
+			id: 556,
+			tasks: [{
+				id: 557,
+				type: "item",
+				item: "cyclic:cask"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 2.0d,
+			dependencies: [I;
+				103,
+				556,
+				509
+			],
+			id: 558,
+			tasks: [{
+				id: 559,
+				type: "item",
+				item: {
+					id: "travelersbackpack:standard",
+					Count: 1,
+					tag: {}
+				}
 			}]
 		}
 	]

@@ -4,7 +4,7 @@
 	#Places backpack at place where player died
 	backpackDeathPlace = true
 	#Range: > 250
-	tanksCapacity = 4000
+	tanksCapacity = 8000
 	#Enables button in backpack gui, which allows to empty tank
 	enableEmptyTankButton = true
 	toolSlotsAcceptSwords = true
@@ -15,3 +15,4 @@
 	enableBackpackBlockWearable = true
 	#Enables backpacks spawning in loot chests
 	enableLoot = false
+

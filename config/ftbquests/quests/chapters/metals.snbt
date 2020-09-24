@@ -1,7 +1,7 @@
 {
 	id: 499,
 	filename: "metals",
-	order_index: 6,
+	order_index: 5,
 	title: "Metals",
 	quests: [{
 		disable_toast: 1,

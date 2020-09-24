@@ -1,5 +1,3 @@
-val ieHammer = <item:immersiveengineering:hammer>;
-
 // Removing TP cobblestone generators 
 // Only removing recipe for tier 1, since they're cumulative
 

@@ -24,3 +24,10 @@ craftingTable.addShaped("cyclic/clock", <item:cyclic:clock>, [
 	[<item:minecraft:redstone>, <item:minecraft:redstone_torch>, <item:minecraft:redstone>], 
 	[<item:immersiveengineering:treated_wood_horizontal>, <item:minecraft:redstone>, <item:immersiveengineering:treated_wood_horizontal>]
 ]);
+
+craftingTable.removeRecipe(<item:cyclic:cask>);
+craftingTable.addShaped("cyclic/cask", <item:cyclic:cask>, [
+	[<item:contenttweaker:wooden_plate>, <item:minecraft:glass>, <item:contenttweaker:wooden_plate>], 
+	[<item:minecraft:glass>, <item:minecraft:air>, <item:minecraft:glass>], 
+	[<item:contenttweaker:wooden_plate>, <item:minecraft:glass>, <item:contenttweaker:wooden_plate>]
+]);
