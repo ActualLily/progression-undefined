@@ -19,6 +19,7 @@
 		{
 			x: 2.0d,
 			y: 0.0d,
+			dependencies: [I;509],
 			id: 510,
 			tasks: [{
 				id: 511,
@@ -30,6 +31,7 @@
 		{
 			x: 4.0d,
 			y: -2.0d,
+			dependencies: [I;514],
 			id: 512,
 			tasks: [{
 				id: 513,
@@ -40,6 +42,7 @@
 		{
 			x: 2.0d,
 			y: -2.0d,
+			dependencies: [I;510],
 			id: 514,
 			tasks: [{
 				id: 515,
@@ -51,6 +54,7 @@
 		{
 			x: 2.0d,
 			y: -4.0d,
+			dependencies: [I;514],
 			id: 516,
 			tasks: [{
 				id: 517,
@@ -61,6 +65,7 @@
 		{
 			x: 4.0d,
 			y: 0.0d,
+			dependencies: [I;510],
 			id: 518,
 			tasks: [{
 				id: 519,
@@ -71,6 +76,7 @@
 		{
 			x: 2.0d,
 			y: 2.0d,
+			dependencies: [I;510],
 			id: 520,
 			tasks: [{
 				id: 521,
@@ -81,6 +87,7 @@
 		{
 			x: 4.0d,
 			y: 2.0d,
+			dependencies: [I;510],
 			id: 522,
 			tasks: [{
 				id: 523,
@@ -91,6 +98,7 @@
 		{
 			x: 2.0d,
 			y: 4.0d,
+			dependencies: [I;520],
 			id: 524,
 			tasks: [{
 				id: 525,
@@ -101,6 +109,7 @@
 		{
 			x: 6.0d,
 			y: 0.0d,
+			dependencies: [I;518],
 			id: 526,
 			tasks: [{
 				id: 527,
@@ -112,21 +121,12 @@
 			x: 0.0d,
 			y: -2.0d,
 			description: ["The 2x2 drawers are excellent to put under a hopping bonsai pot, since all bonsai trees only have 4 drops at most."],
+			dependencies: [I;509],
 			id: 528,
 			tasks: [{
 				id: 529,
 				type: "item",
 				item: "storagedrawers:oak_full_drawers_4"
-			}]
-		},
-		{
-			x: 0.0d,
-			y: -4.0d,
-			id: 530,
-			tasks: [{
-				id: 531,
-				type: "item",
-				item: "storagedrawers:compacting_drawers_3"
 			}]
 		}
 	]

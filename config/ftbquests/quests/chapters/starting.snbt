@@ -63,68 +63,6 @@
 			]
 		},
 		{
-			x: 0.0d,
-			y: -2.0d,
-			id: 97,
-			tasks: [{
-				id: 98,
-				type: "item",
-				item: {
-					id: "mekanismtools:wood_paxel",
-					Count: 1,
-					tag: {
-						Damage: 0
-					}
-				}
-			}],
-			rewards: [
-				{
-					id: 99,
-					type: "item",
-					item: {
-						id: "tp:wooden_helmet",
-						Count: 1,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: 100,
-					type: "item",
-					item: {
-						id: "tp:wooden_chestplate",
-						Count: 1,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: 101,
-					type: "item",
-					item: {
-						id: "tp:wooden_leggings",
-						Count: 1,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: 102,
-					type: "item",
-					item: {
-						id: "tp:wooden_boots",
-						Count: 1,
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-			]
-		},
-		{
 			x: -2.0d,
 			y: 2.0d,
 			dependencies: [I;92],
@@ -405,9 +343,12 @@
 			}]
 		},
 		{
-			x: -2.0d,
+			x: 0.0d,
 			y: -2.0d,
-			dependencies: [I;92],
+			dependencies: [I;
+				92,
+				165
+			],
 			id: 185,
 			tasks: [{
 				id: 186,
@@ -666,11 +607,11 @@
 		},
 		{
 			x: -4.0d,
-			y: 2.0d,
+			y: 0.0d,
 			dependencies: [I;
 				103,
 				556,
-				509
+				562
 			],
 			id: 558,
 			tasks: [{
@@ -681,6 +622,28 @@
 					Count: 1,
 					tag: {}
 				}
+			}]
+		},
+		{
+			x: -6.0d,
+			y: 0.0d,
+			dependencies: [I;558],
+			id: 560,
+			tasks: [{
+				id: 561,
+				type: "item",
+				item: "travelersbackpack:hose"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -2.0d,
+			dependencies: [I;92],
+			id: 562,
+			tasks: [{
+				id: 563,
+				type: "item",
+				item: "extendedcrafting:handheld_table"
 			}]
 		}
 	]

@@ -3,7 +3,7 @@ furnace.removeByModid("ceramics");
 
 // Adjust Clay Plate recipe
 craftingTable.removeRecipe(<item:ceramics:unfired_clay_plate>);
-craftingTable.addShaped("ceramics(unfired_clay_plate", <item:ceramics:unfired_clay_plate> * 3, [
+craftingTable.addShaped("ceramics/unfired_clay_plate", <item:ceramics:unfired_clay_plate> * 3, [
 	[<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>], 
 	[<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>], 
 	[<item:minecraft:clay_ball>, <item:minecraft:clay_ball>, <item:minecraft:clay_ball>]
