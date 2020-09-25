@@ -12,3 +12,9 @@ craftingTable.addShaped("travelersbackpack/standard",<item:travelersbackpack:sta
 	[<item:cyclic:cask>, <item:minecraft:air>, <item:cyclic:cask>], 
 	[<item:minecraft:leather>, <item:cyclic:sleeping_mat>.withTag({Damage: 0 as int}), <item:minecraft:leather>]
 ]);
+
+craftingTable.addShaped("travelersbackpack/hose", <item:travelersbackpack:hose>, [
+	[<tag:forge:dyes/green>, <tag:forge:glass>, <tag:forge:dyes/green>], 
+	[<tag:forge:glass>, <item:minecraft:air>, <tag:forge:glass>], 
+	[<tag:forge:dyes/green>, <tag:forge:glass>, <tag:forge:dyes/green>]
+]);

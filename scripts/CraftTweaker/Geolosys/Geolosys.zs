@@ -2,7 +2,7 @@
 
 // Replace Prospector's Pick recipe with one using Astral Sorcery materials.
 craftingTable.removeRecipe(<item:geolosys:prospectors_pick>);
-craftingTable.addShapedMirrored("prospectors_pick", <item:geolosys:prospectors_pick>, [
+craftingTable.addShapedMirrored("geolosys/prospectors_pick", <item:geolosys:prospectors_pick>, [
 	[<item:astralsorcery:marble_raw>, <item:astralsorcery:marble_raw>, <item:astralsorcery:aquamarine>], 
 	[<item:minecraft:air>, <item:minecraft:air>, <tag:forge:rods/treated_wood>], 
 	[<item:minecraft:air>, <item:minecraft:air>, <tag:forge:rods/treated_wood>]

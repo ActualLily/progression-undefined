@@ -16,7 +16,7 @@ for box, wood in crateTypes {
 	<tag:contenttweaker:storage/9>.addItems(box);
 	<tag:contenttweaker:storage>.addItems(box);
 	
-	craftingTable.addShaped("box_" + box.registryName.split("_")[2], box, [
+	craftingTable.addShaped("charm/crate_" + box.registryName.split("_")[2], box, [
 		[<item:contenttweaker:stone_brick_single>, wood, <item:contenttweaker:stone_brick_single>], 
 		[wood, <item:contenttweaker:framed_plate>, wood], 
 		[<item:contenttweaker:stone_brick_single>, wood, <item:contenttweaker:stone_brick_single>]

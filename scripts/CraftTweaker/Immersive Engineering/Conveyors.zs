@@ -3,7 +3,7 @@
 
 // Basic Conveyor Belt
 craftingTable.removeRecipe(<item:immersiveengineering:conveyor_basic>);
-craftingTable.addShaped("conveyor_basic", <item:immersiveengineering:conveyor_basic> * 8, [
+craftingTable.addShaped("immersiveengineering/conveyor_basic", <item:immersiveengineering:conveyor_basic> * 8, [
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
 	[<tag:forge:plates/wooden>, <tag:forge:plates/wooden>, <tag:forge:plates/wooden>], 
 	[<item:contenttweaker:wooden_gear>, <item:ceramics:clay_plate>, <item:contenttweaker:wooden_gear>]
@@ -11,7 +11,7 @@ craftingTable.addShaped("conveyor_basic", <item:immersiveengineering:conveyor_ba
 
 // Dropper Conveyor Belt
 craftingTable.removeRecipe(<item:immersiveengineering:conveyor_dropper>);
-craftingTable.addShaped("conveyor_dropper", <item:immersiveengineering:conveyor_dropper>, [
+craftingTable.addShaped("immersiveengineering/conveyor_dropper", <item:immersiveengineering:conveyor_dropper>, [
 	[<item:minecraft:air>, <item:contenttweaker:stone_gear>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:immersiveengineering:conveyor_basic>, <item:minecraft:air>], 
 	[<tag:forge:plates/wooden>, <tag:minecraft:wooden_trapdoors>, <tag:forge:plates/wooden>]
@@ -19,7 +19,7 @@ craftingTable.addShaped("conveyor_dropper", <item:immersiveengineering:conveyor_
 
 //  Redstone Controlled Conveyor Belt
 craftingTable.removeRecipe(<item:immersiveengineering:conveyor_redstone>);
-craftingTable.addShaped("conveyor_redstone", <item:immersiveengineering:conveyor_redstone>, [
+craftingTable.addShaped("immersiveengineering/conveyor_redstone", <item:immersiveengineering:conveyor_redstone>, [
 	[<item:minecraft:air>, <item:contenttweaker:stone_gear>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:immersiveengineering:conveyor_basic>, <item:minecraft:air>], 
 	[<tag:forge:plates/wooden>, <item:minecraft:redstone_torch>, <tag:forge:plates/wooden>]
@@ -27,7 +27,7 @@ craftingTable.addShaped("conveyor_redstone", <item:immersiveengineering:conveyor
 
 // Splitter Conveyor Belt
 craftingTable.removeRecipe(<item:immersiveengineering:conveyor_splitter>);
-craftingTable.addShaped("conveyor_splitter", <item:immersiveengineering:conveyor_splitter>, [
+craftingTable.addShaped("immersiveengineering/conveyor_splitter", <item:immersiveengineering:conveyor_splitter>, [
 	[<item:minecraft:air>, <item:contenttweaker:stone_gear>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:immersiveengineering:conveyor_basic>, <item:minecraft:air>], 
 	[<tag:forge:plates/wooden>, <item:minecraft:lever>, <tag:forge:plates/wooden>]
@@ -35,7 +35,7 @@ craftingTable.addShaped("conveyor_splitter", <item:immersiveengineering:conveyor
 
 // Extractor Conveyor Belt
 craftingTable.removeRecipe(<item:immersiveengineering:conveyor_extract>);
-craftingTable.addShaped("conveyor_extract", <item:immersiveengineering:conveyor_extract>, [
+craftingTable.addShaped("immersiveengineering/conveyor_extract", <item:immersiveengineering:conveyor_extract>, [
 	[<item:minecraft:air>, <item:contenttweaker:stone_gear>, <item:minecraft:air>], 
 	[<item:minecraft:oak_fence_gate>, <item:immersiveengineering:conveyor_basic>, <item:minecraft:air>], 
 	[<tag:forge:plates/wooden>, <tag:forge:plates/framed>, <tag:forge:plates/wooden>]
@@ -43,7 +43,7 @@ craftingTable.addShaped("conveyor_extract", <item:immersiveengineering:conveyor_
 
 // Vertical Conveyor Belt
 craftingTable.removeRecipe(<item:immersiveengineering:conveyor_vertical>);
-craftingTable.addShaped("conveyor_vertical", <item:immersiveengineering:conveyor_vertical>, [
+craftingTable.addShaped("immersiveengineering/conveyor_vertical", <item:immersiveengineering:conveyor_vertical>, [
 	[<item:minecraft:air>, <item:minecraft:air>, <item:minecraft:air>], 
 	[<item:minecraft:air>, <item:immersiveengineering:conveyor_basic>, <item:minecraft:ladder>], 
 	[<tag:forge:plates/wooden>, <item:minecraft:air>, <tag:forge:plates/wooden>]
@@ -51,7 +51,7 @@ craftingTable.addShaped("conveyor_vertical", <item:immersiveengineering:conveyor
 
 // Item Router
 craftingTable.removeRecipe(<item:immersiveengineering:sorter>);
-craftingTable.addShaped("sorter", <item:immersiveengineering:sorter>, [
+craftingTable.addShaped("immersiveengineering/sorter", <item:immersiveengineering:sorter>, [
 	[<tag:forge:treated_wood>, <item:contenttweaker:stone_gear>, <tag:forge:treated_wood>], 
 	[<item:immersiveengineering:conveyor_basic>, <item:immersiveengineering:conveyor_splitter>, <item:immersiveengineering:conveyor_basic>], 
 	[<tag:forge:treated_wood>, <item:contenttweaker:stone_gear>, <tag:forge:treated_wood>]
